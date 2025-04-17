@@ -1,0 +1,9 @@
+﻿device_type_id,device_type,variable_name,access,type,unit,gain,address,quantity
+1,Smart Logger,Date&Time,RW,U16,N/A,10,0,1
+1,Smart Logger,City,RW,U32,N/A,1,1,2
+1,Smart Logger,Daylight Saving Time (DST),RW,U16,N/A,1,3,1
+1,Smart Logger,Time Zone,RO,I32,S,100,4,2
+1,Smart Logger,DST state,RO,U16,N/A,1,6,1
+1,Smart Logger,Next Block Test,RO,U16,N/A,1,145,1
+2,Inverter,Test1,RW,U16,N/A,10,0,1
+2,Inverter,Test2,RW,U32,N/A,1,1,2

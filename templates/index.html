@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Modbus Dashboard</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    .tabs { display: flex; margin-bottom: 10px; }
+    .tab { padding: 10px; margin-right: 5px; background: #eee; cursor: pointer; border-radius: 5px; }
+    .tab.active { background: #007bff; color: #fff; }
+    .table-container { display: none; }
+    .table-container.active { display: block; }
+
+    table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+    th, td { border: 1px solid #ccc; padding: 8px; }
+    th { background-color: #007bff; color: white; }
+  </style>
+</head>
+<body>
+  <h1>Modbus Dashboard</h1>
+  <div id="tabs" class="tabs"></div>
+  <div id="tables"></div>
+
+  <script>
+    async function fetchData() {
+      const response = await fetch('/data');
+      return await response.json();
+    }
+
+    function renderTabs(data) {
+      const tabsContainer = document.getElementById("tabs");
+      const tablesContainer = document.getElementById("tables");
+      tabsContainer.innerHTML = '';
+      tablesContainer.innerHTML = '';
+
+      Object.entries(data).forEach(([deviceKey, vars], index) => {
+        const [ip, id] = deviceKey.split("_");
+
+        // Create tab
+        const tab = document.createElement("div");
+        tab.className = "tab" + (index === 0 ? " active" : "");
+        tab.textContent = `Device ${id} (${ip})`;
+        tab.dataset.device = deviceKey;
+        tabsContainer.appendChild(tab);
+
+        // Create table
+        const container = document.createElement("div");
+        container.className = "table-container" + (index === 0 ? " active" : "");
+        container.id = deviceKey;
+
+        const table = document.createElement("table");
+        const thead = document.createElement("thead");
+        thead.innerHTML = `
+          <tr>
+            <th>Device ID</th>
+            <th>IP Address</th>
+            <th>Address</th>
+            <th>Variable</th>
+            <th>Value</th>
+            <th>Unit</th>
+          </tr>
+        `;
+        table.appendChild(thead);
+
+        const tbody = document.createElement("tbody");
+        for (const entry of vars) {
+          const row = document.createElement("tr");
+          row.innerHTML = `
+            <td>${id}</td>
+            <td>${ip}</td>
+            <td>${entry.address ?? "-"}</td>
+            <td>${entry.variable_name}</td>
+            <td>${entry.value}</td>
+            <td>${entry.unit || ''}</td>
+          `;
+          tbody.appendChild(row);
+        }
+
+        table.appendChild(tbody);
+        container.appendChild(table);
+        tablesContainer.appendChild(container);
+      });
+
+      // Tab switching logic
+      document.querySelectorAll(".tab").forEach(tab => {
+        tab.addEventListener("click", () => {
+          document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
+          document.querySelectorAll(".table-container").forEach(tc => tc.classList.remove("active"));
+          tab.classList.add("active");
+          document.getElementById(tab.dataset.device).classList.add("active");
+        });
+      });
+    }
+
+    async function refresh() {
+      const data = await fetchData();
+      renderTabs(data);
+    }
+
+    window.onload = () => {
+      refresh();
+      setInterval(refresh, 5000);
+    };
+  </script>
+</body>
+</html>
