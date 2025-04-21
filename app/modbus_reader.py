@@ -73,7 +73,7 @@ def poll_device(device):
 
             # Determine function code and base address
             if 30000 <= start_address < 40000:
-                fc = 4
+                fc = 3
                 base = 0
             elif 40000 <= start_address < 50000:
                 fc = 3
