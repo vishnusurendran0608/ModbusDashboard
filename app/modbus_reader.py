@@ -44,6 +44,18 @@ def poll_device(device):
 
     with polling_locks[ip]:
         client = ModbusTcpClient(ip, port=port)
+        import socket
+        # Try to get the IP address used by this connection
+        try:
+           s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+           s.connect((ip, port))
+           local_ip = s.getsockname()[0]
+           s.close()
+           logger.info(f"Using local IP {local_ip} to connect to {ip}:{port}")
+        except Exception as e:
+           logger.warning(f"Unable to determine local IP: {e}")
+
+
         if not client.connect():
             logger.warning(f"Unable to connect to IP: {ip}, ID: {unit_id}")
             return
