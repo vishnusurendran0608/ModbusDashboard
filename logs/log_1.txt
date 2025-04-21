@@ -16246,3 +16246,844 @@
 2025-04-16 23:24:56,931 [INFO] Read Test1 = 12.3 from IP: 192.168.1.10, ID: 1, Address: 0
 2025-04-16 23:24:56,932 [INFO] Read Test2 = 8746.0 from IP: 192.168.1.10, ID: 1, Address: 1
 2025-04-16 23:24:56,933 [INFO] Disconnected from IP: 192.168.1.10, ID: 1
+2025-04-21 21:05:50,653 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:05:50,655 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40010
+2025-04-21 21:05:53,667 [WARNING] Unable to connect to IP: 192.168.1.10, ID: 1
+2025-04-21 21:05:58,676 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:05:58,676 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40010
+2025-04-21 21:06:01,685 [WARNING] Unable to connect to IP: 192.168.1.10, ID: 1
+2025-04-21 21:06:06,694 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:06:06,696 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40010
+2025-04-21 21:06:09,707 [WARNING] Unable to connect to IP: 192.168.1.10, ID: 1
+2025-04-21 21:12:20,350 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:12:20,350 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:12:23,359 [WARNING] Unable to connect to IP: 192.168.1.10, ID: 1
+2025-04-21 21:12:28,373 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:12:28,374 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:12:31,379 [WARNING] Unable to connect to IP: 192.168.1.10, ID: 1
+2025-04-21 21:13:21,844 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:13:21,845 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:13:21,846 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:13:21,846 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:13:26,877 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:13:26,877 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:13:26,877 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:13:26,878 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:13:31,908 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:13:31,908 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:13:31,908 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:13:31,909 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:13:36,938 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:13:36,939 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:13:36,940 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:13:36,942 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:13:41,961 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:13:41,962 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:13:41,962 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:13:41,963 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:13:46,989 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:13:46,990 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:13:46,990 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:13:46,992 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:13:52,023 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:13:52,024 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:13:52,024 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:13:52,027 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:13:57,062 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:13:57,062 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:13:57,063 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:13:57,063 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:14:02,096 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:14:02,096 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:14:02,096 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:14:02,097 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:14:07,115 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:14:07,115 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:14:07,116 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:14:07,116 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:14:12,135 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:14:12,137 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:14:12,137 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:14:12,137 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:14:17,162 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:14:17,163 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:14:17,174 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:14:17,175 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:14:22,187 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:14:22,189 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:14:22,189 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:14:22,190 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:14:27,223 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:14:27,223 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:14:27,224 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:14:27,226 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:14:32,245 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:14:32,245 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:14:32,246 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:14:32,246 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:14:37,280 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:14:37,280 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:14:37,281 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:14:37,282 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:14:42,315 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:14:42,316 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:14:42,316 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:14:42,316 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:14:47,353 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:14:47,354 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:14:47,353 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:14:47,363 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:14:52,381 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:14:52,381 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:14:52,382 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:14:52,382 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:14:57,409 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:14:57,409 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:14:57,410 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:14:57,410 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:15:02,435 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:15:02,435 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:15:02,435 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:15:02,436 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:15:07,454 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:15:07,454 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:15:07,454 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:15:07,455 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:15:12,480 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:15:12,481 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:15:12,482 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:15:12,483 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:15:17,509 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:15:17,509 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:15:17,510 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:15:17,510 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:15:22,532 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:15:22,532 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:15:22,533 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:15:22,534 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:15:27,563 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:15:27,563 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:15:27,564 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:15:27,565 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:15:32,583 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:15:32,583 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:15:32,584 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:15:32,584 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:15:37,620 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:15:37,621 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:15:37,622 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:15:37,625 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:15:42,666 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:15:42,667 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:15:42,667 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:15:42,671 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:15:47,714 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:15:47,715 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:15:47,716 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:15:47,717 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:15:52,754 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:15:52,755 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:15:52,755 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:15:52,756 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:15:57,768 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:15:57,769 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:15:57,769 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:15:57,770 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:16:02,789 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:16:02,790 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:16:02,789 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:16:02,793 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:16:07,812 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:16:07,812 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:16:07,812 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:16:07,813 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:16:12,840 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:16:12,841 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:16:12,841 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:16:12,843 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:16:17,884 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:16:17,884 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:16:17,886 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:16:17,886 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:16:22,923 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:16:22,923 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:16:22,936 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:16:22,938 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:16:27,976 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:16:27,976 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:16:27,978 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:16:27,978 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:16:33,006 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:16:33,007 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:16:33,007 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:16:33,008 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:16:38,036 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:16:38,036 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:16:38,037 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:16:38,038 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:16:43,083 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:16:43,083 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:16:43,083 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:16:43,084 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:16:48,099 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:16:48,100 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:16:48,100 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:16:48,101 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:16:53,119 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:16:53,119 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:16:53,120 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:16:53,120 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:16:58,150 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:16:58,150 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:16:58,151 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:16:58,152 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:17:03,186 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:17:03,186 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:17:03,187 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:17:03,187 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:17:08,206 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:17:08,206 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:17:08,207 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:17:08,207 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:17:13,220 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:17:13,220 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:17:13,220 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:17:13,221 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:17:18,240 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:17:18,240 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:17:18,241 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:17:18,241 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:17:23,272 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:17:23,272 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:17:23,272 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:17:23,274 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:17:28,311 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:17:28,311 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:17:28,311 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:17:28,312 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:17:33,335 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:17:33,335 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:17:33,336 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:17:33,336 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:17:38,355 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:17:38,355 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:17:38,355 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:17:38,357 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:17:43,385 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:17:43,386 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:17:43,387 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:17:43,388 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:17:48,417 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:17:48,418 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:17:48,430 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:17:48,431 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:17:53,452 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:17:53,453 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:17:53,453 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:17:53,454 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:17:58,485 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:17:58,485 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:17:58,486 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:17:58,486 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:18:03,499 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:18:03,501 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:18:03,502 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:18:03,502 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:18:08,522 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:18:08,523 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:18:08,534 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:18:08,536 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:18:13,552 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:18:13,552 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:18:13,554 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:18:13,554 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:18:18,576 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:18:18,576 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:18:18,577 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:18:18,577 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:18:23,608 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:18:23,609 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:18:23,609 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:18:23,610 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:18:28,644 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:18:28,645 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:18:28,657 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:18:28,659 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:18:33,681 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:18:33,682 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:18:33,682 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:18:33,683 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:18:38,715 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:18:38,715 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:18:38,716 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:18:38,716 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:18:43,758 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:18:43,759 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:18:43,759 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:18:43,760 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:18:48,797 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:18:48,797 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:18:48,797 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:18:48,798 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:18:53,832 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:18:53,833 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:18:53,833 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:18:53,834 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:18:58,875 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:18:58,875 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:18:58,876 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:18:58,876 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:19:03,912 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:19:03,912 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:19:03,925 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:19:03,926 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:19:08,953 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:19:08,953 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:19:08,954 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:19:08,954 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:19:13,980 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:19:13,981 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:19:13,981 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:19:13,981 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:19:19,025 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:19:19,025 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:19:19,027 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:19:19,027 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:19:24,063 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:19:24,063 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:19:24,063 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:19:24,074 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:19:29,122 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:19:29,122 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:19:29,123 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:19:29,123 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:19:34,161 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:19:34,161 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:19:34,161 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:19:34,162 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:19:39,197 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:19:39,197 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:19:39,198 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:19:39,199 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:19:44,238 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:19:44,239 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:19:44,250 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:19:44,253 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:19:49,286 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:19:49,286 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:19:49,288 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:19:49,288 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:19:54,328 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:19:54,329 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:19:54,330 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:19:54,330 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:20:33,417 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:20:33,418 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:20:33,418 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:20:33,419 [INFO] Read Date&Time = 0.2 from IP: 127.0.0.1, ID: 1, Address: 40000
+2025-04-21 21:20:33,419 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:20:33,419 [INFO] Read City = 655364.0 from IP: 127.0.0.1, ID: 1, Address: 40001
+2025-04-21 21:20:33,420 [INFO] Read Daylight Saving Time (DST) = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40003
+2025-04-21 21:20:33,421 [INFO] Read Time Zone = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40004
+2025-04-21 21:20:33,421 [INFO] Read DST state = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40006
+2025-04-21 21:20:33,421 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-21 21:20:33,421 [INFO] Read Next Block Test = 85.0 from IP: 127.0.0.1, ID: 1, Address: 40145
+2025-04-21 21:20:33,423 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-21 21:20:33,449 [INFO] Read Test1 = 0.5 from IP: 192.168.29.71, ID: 1, Address: 40000
+2025-04-21 21:20:33,450 [INFO] Read Test2 = 327690.0 from IP: 192.168.29.71, ID: 1, Address: 40001
+2025-04-21 21:20:33,450 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-21 21:20:38,456 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:20:38,456 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:20:38,456 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:20:38,456 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:20:38,457 [INFO] Read Date&Time = 0.2 from IP: 127.0.0.1, ID: 1, Address: 40000
+2025-04-21 21:20:38,457 [INFO] Read City = 655364.0 from IP: 127.0.0.1, ID: 1, Address: 40001
+2025-04-21 21:20:38,458 [INFO] Read Daylight Saving Time (DST) = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40003
+2025-04-21 21:20:38,458 [INFO] Read Time Zone = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40004
+2025-04-21 21:20:38,458 [INFO] Read DST state = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40006
+2025-04-21 21:20:38,458 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-21 21:20:38,460 [INFO] Read Next Block Test = 85.0 from IP: 127.0.0.1, ID: 1, Address: 40145
+2025-04-21 21:20:38,460 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-21 21:20:38,485 [INFO] Read Test1 = 0.5 from IP: 192.168.29.71, ID: 1, Address: 40000
+2025-04-21 21:20:38,486 [INFO] Read Test2 = 327690.0 from IP: 192.168.29.71, ID: 1, Address: 40001
+2025-04-21 21:20:38,486 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-21 21:20:43,495 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:20:43,495 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:20:43,496 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:20:43,496 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:20:43,497 [INFO] Read Date&Time = 0.2 from IP: 127.0.0.1, ID: 1, Address: 40000
+2025-04-21 21:20:43,498 [INFO] Read City = 655364.0 from IP: 127.0.0.1, ID: 1, Address: 40001
+2025-04-21 21:20:43,498 [INFO] Read Daylight Saving Time (DST) = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40003
+2025-04-21 21:20:43,498 [INFO] Read Time Zone = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40004
+2025-04-21 21:20:43,498 [INFO] Read DST state = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40006
+2025-04-21 21:20:43,499 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-21 21:20:43,499 [INFO] Read Next Block Test = 85.0 from IP: 127.0.0.1, ID: 1, Address: 40145
+2025-04-21 21:20:43,500 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-21 21:20:43,524 [INFO] Read Test1 = 0.5 from IP: 192.168.29.71, ID: 1, Address: 40000
+2025-04-21 21:20:43,527 [INFO] Read Test2 = 327690.0 from IP: 192.168.29.71, ID: 1, Address: 40001
+2025-04-21 21:20:43,527 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-21 21:20:48,537 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:20:48,537 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:20:48,549 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:20:48,550 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:20:48,552 [INFO] Read Date&Time = 0.2 from IP: 127.0.0.1, ID: 1, Address: 40000
+2025-04-21 21:20:48,552 [INFO] Read City = 655364.0 from IP: 127.0.0.1, ID: 1, Address: 40001
+2025-04-21 21:20:48,552 [INFO] Read Daylight Saving Time (DST) = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40003
+2025-04-21 21:20:48,553 [INFO] Read Time Zone = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40004
+2025-04-21 21:20:48,553 [INFO] Read DST state = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40006
+2025-04-21 21:20:48,553 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-21 21:20:48,554 [INFO] Read Next Block Test = 85.0 from IP: 127.0.0.1, ID: 1, Address: 40145
+2025-04-21 21:20:48,555 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-21 21:20:48,566 [INFO] Read Test1 = 0.5 from IP: 192.168.29.71, ID: 1, Address: 40000
+2025-04-21 21:20:48,567 [INFO] Read Test2 = 327690.0 from IP: 192.168.29.71, ID: 1, Address: 40001
+2025-04-21 21:20:48,567 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-21 21:20:53,574 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:20:53,574 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:20:53,575 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:20:53,575 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:20:53,577 [INFO] Read Date&Time = 0.2 from IP: 127.0.0.1, ID: 1, Address: 40000
+2025-04-21 21:20:53,578 [INFO] Read City = 655364.0 from IP: 127.0.0.1, ID: 1, Address: 40001
+2025-04-21 21:20:53,579 [INFO] Read Daylight Saving Time (DST) = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40003
+2025-04-21 21:20:53,580 [INFO] Read Time Zone = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40004
+2025-04-21 21:20:53,580 [INFO] Read DST state = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40006
+2025-04-21 21:20:53,581 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-21 21:20:53,583 [INFO] Read Next Block Test = 85.0 from IP: 127.0.0.1, ID: 1, Address: 40145
+2025-04-21 21:20:53,584 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-21 21:20:53,603 [INFO] Read Test1 = 0.5 from IP: 192.168.29.71, ID: 1, Address: 40000
+2025-04-21 21:20:53,604 [INFO] Read Test2 = 327690.0 from IP: 192.168.29.71, ID: 1, Address: 40001
+2025-04-21 21:20:53,605 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-21 21:20:58,610 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:20:58,610 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:20:58,611 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:20:58,612 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:20:58,613 [INFO] Read Date&Time = 0.2 from IP: 127.0.0.1, ID: 1, Address: 40000
+2025-04-21 21:20:58,614 [INFO] Read City = 655364.0 from IP: 127.0.0.1, ID: 1, Address: 40001
+2025-04-21 21:20:58,614 [INFO] Read Daylight Saving Time (DST) = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40003
+2025-04-21 21:20:58,615 [INFO] Read Time Zone = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40004
+2025-04-21 21:20:58,615 [INFO] Read DST state = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40006
+2025-04-21 21:20:58,616 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-21 21:20:58,618 [INFO] Read Next Block Test = 85.0 from IP: 127.0.0.1, ID: 1, Address: 40145
+2025-04-21 21:20:58,619 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-21 21:20:58,638 [INFO] Read Test1 = 0.5 from IP: 192.168.29.71, ID: 1, Address: 40000
+2025-04-21 21:20:58,639 [INFO] Read Test2 = 327690.0 from IP: 192.168.29.71, ID: 1, Address: 40001
+2025-04-21 21:20:58,640 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-21 21:21:03,659 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:21:03,660 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:21:03,660 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:21:03,661 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:21:03,663 [INFO] Read Date&Time = 0.2 from IP: 127.0.0.1, ID: 1, Address: 40000
+2025-04-21 21:21:03,663 [INFO] Read City = 655364.0 from IP: 127.0.0.1, ID: 1, Address: 40001
+2025-04-21 21:21:03,664 [INFO] Read Daylight Saving Time (DST) = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40003
+2025-04-21 21:21:03,664 [INFO] Read Time Zone = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40004
+2025-04-21 21:21:03,665 [INFO] Read DST state = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40006
+2025-04-21 21:21:03,666 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-21 21:21:03,668 [INFO] Read Next Block Test = 85.0 from IP: 127.0.0.1, ID: 1, Address: 40145
+2025-04-21 21:21:03,669 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-21 21:21:03,674 [INFO] Read Test1 = 0.5 from IP: 192.168.29.71, ID: 1, Address: 40000
+2025-04-21 21:21:03,675 [INFO] Read Test2 = 327690.0 from IP: 192.168.29.71, ID: 1, Address: 40001
+2025-04-21 21:21:03,676 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-21 21:21:08,687 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:21:08,687 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:21:08,688 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:21:08,689 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:21:08,690 [INFO] Read Date&Time = 0.2 from IP: 127.0.0.1, ID: 1, Address: 40000
+2025-04-21 21:21:08,691 [INFO] Read City = 655364.0 from IP: 127.0.0.1, ID: 1, Address: 40001
+2025-04-21 21:21:08,692 [INFO] Read Daylight Saving Time (DST) = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40003
+2025-04-21 21:21:08,693 [INFO] Read Time Zone = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40004
+2025-04-21 21:21:08,693 [INFO] Read DST state = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40006
+2025-04-21 21:21:08,694 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-21 21:21:08,696 [INFO] Read Next Block Test = 85.0 from IP: 127.0.0.1, ID: 1, Address: 40145
+2025-04-21 21:21:08,697 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-21 21:21:08,716 [INFO] Read Test1 = 0.5 from IP: 192.168.29.71, ID: 1, Address: 40000
+2025-04-21 21:21:08,716 [INFO] Read Test2 = 327690.0 from IP: 192.168.29.71, ID: 1, Address: 40001
+2025-04-21 21:21:08,717 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-21 21:21:13,726 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:21:13,726 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:21:13,727 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:21:13,727 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:21:13,729 [INFO] Read Date&Time = 0.2 from IP: 127.0.0.1, ID: 1, Address: 40000
+2025-04-21 21:21:13,730 [INFO] Read City = 655364.0 from IP: 127.0.0.1, ID: 1, Address: 40001
+2025-04-21 21:21:13,731 [INFO] Read Daylight Saving Time (DST) = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40003
+2025-04-21 21:21:13,732 [INFO] Read Time Zone = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40004
+2025-04-21 21:21:13,733 [INFO] Read DST state = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40006
+2025-04-21 21:21:13,735 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-21 21:21:13,737 [INFO] Read Next Block Test = 85.0 from IP: 127.0.0.1, ID: 1, Address: 40145
+2025-04-21 21:21:13,738 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-21 21:21:13,755 [INFO] Read Test1 = 0.5 from IP: 192.168.29.71, ID: 1, Address: 40000
+2025-04-21 21:21:13,757 [INFO] Read Test2 = 327690.0 from IP: 192.168.29.71, ID: 1, Address: 40001
+2025-04-21 21:21:13,758 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-21 21:21:18,765 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:21:18,766 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:21:18,766 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:21:18,767 [INFO] Read Date&Time = 0.2 from IP: 127.0.0.1, ID: 1, Address: 40000
+2025-04-21 21:21:18,767 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:21:18,768 [INFO] Read City = 655364.0 from IP: 127.0.0.1, ID: 1, Address: 40001
+2025-04-21 21:21:18,769 [INFO] Read Daylight Saving Time (DST) = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40003
+2025-04-21 21:21:18,770 [INFO] Read Time Zone = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40004
+2025-04-21 21:21:18,771 [INFO] Read DST state = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40006
+2025-04-21 21:21:18,773 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-21 21:21:18,774 [INFO] Read Next Block Test = 85.0 from IP: 127.0.0.1, ID: 1, Address: 40145
+2025-04-21 21:21:18,775 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-21 21:21:18,794 [INFO] Read Test1 = 0.5 from IP: 192.168.29.71, ID: 1, Address: 40000
+2025-04-21 21:21:18,796 [INFO] Read Test2 = 327690.0 from IP: 192.168.29.71, ID: 1, Address: 40001
+2025-04-21 21:21:18,798 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-21 21:21:23,813 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:21:23,814 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:21:23,815 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:21:23,815 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:21:23,816 [INFO] Read Date&Time = 0.2 from IP: 127.0.0.1, ID: 1, Address: 40000
+2025-04-21 21:21:23,817 [INFO] Read City = 655364.0 from IP: 127.0.0.1, ID: 1, Address: 40001
+2025-04-21 21:21:23,818 [INFO] Read Daylight Saving Time (DST) = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40003
+2025-04-21 21:21:23,818 [INFO] Read Time Zone = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40004
+2025-04-21 21:21:23,819 [INFO] Read DST state = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40006
+2025-04-21 21:21:23,820 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-21 21:21:23,821 [INFO] Read Next Block Test = 85.0 from IP: 127.0.0.1, ID: 1, Address: 40145
+2025-04-21 21:21:23,822 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-21 21:21:23,841 [INFO] Read Test1 = 0.5 from IP: 192.168.29.71, ID: 1, Address: 40000
+2025-04-21 21:21:23,842 [INFO] Read Test2 = 327690.0 from IP: 192.168.29.71, ID: 1, Address: 40001
+2025-04-21 21:21:23,843 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-21 21:21:28,856 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:21:28,857 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:21:28,858 [INFO] Read Date&Time = 0.2 from IP: 127.0.0.1, ID: 1, Address: 40000
+2025-04-21 21:21:28,859 [INFO] Read City = 655364.0 from IP: 127.0.0.1, ID: 1, Address: 40001
+2025-04-21 21:21:28,860 [INFO] Read Daylight Saving Time (DST) = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40003
+2025-04-21 21:21:28,860 [INFO] Read Time Zone = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40004
+2025-04-21 21:21:28,862 [INFO] Read DST state = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40006
+2025-04-21 21:21:28,862 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-21 21:21:28,863 [INFO] Read Next Block Test = 85.0 from IP: 127.0.0.1, ID: 1, Address: 40145
+2025-04-21 21:21:28,864 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-21 21:21:28,870 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:21:28,872 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:21:28,887 [INFO] Read Test1 = 0.5 from IP: 192.168.29.71, ID: 1, Address: 40000
+2025-04-21 21:21:28,887 [INFO] Read Test2 = 327690.0 from IP: 192.168.29.71, ID: 1, Address: 40001
+2025-04-21 21:21:28,888 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-21 21:21:33,903 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:21:33,903 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:21:33,904 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:21:33,905 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:21:33,906 [INFO] Read Date&Time = 0.2 from IP: 127.0.0.1, ID: 1, Address: 40000
+2025-04-21 21:21:33,908 [INFO] Read City = 655364.0 from IP: 127.0.0.1, ID: 1, Address: 40001
+2025-04-21 21:21:33,909 [INFO] Read Daylight Saving Time (DST) = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40003
+2025-04-21 21:21:33,909 [INFO] Read Time Zone = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40004
+2025-04-21 21:21:33,910 [INFO] Read DST state = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40006
+2025-04-21 21:21:33,910 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-21 21:21:33,912 [INFO] Read Next Block Test = 85.0 from IP: 127.0.0.1, ID: 1, Address: 40145
+2025-04-21 21:21:33,913 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-21 21:21:33,931 [INFO] Read Test1 = 0.5 from IP: 192.168.29.71, ID: 1, Address: 40000
+2025-04-21 21:21:33,932 [INFO] Read Test2 = 327690.0 from IP: 192.168.29.71, ID: 1, Address: 40001
+2025-04-21 21:21:33,933 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-21 21:21:38,938 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:21:38,940 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:21:38,941 [INFO] Read Date&Time = 0.2 from IP: 127.0.0.1, ID: 1, Address: 40000
+2025-04-21 21:21:38,942 [INFO] Read City = 655364.0 from IP: 127.0.0.1, ID: 1, Address: 40001
+2025-04-21 21:21:38,942 [INFO] Read Daylight Saving Time (DST) = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40003
+2025-04-21 21:21:38,943 [INFO] Read Time Zone = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40004
+2025-04-21 21:21:38,944 [INFO] Read DST state = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40006
+2025-04-21 21:21:38,944 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-21 21:21:38,946 [INFO] Read Next Block Test = 85.0 from IP: 127.0.0.1, ID: 1, Address: 40145
+2025-04-21 21:21:38,946 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-21 21:21:38,952 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:21:38,954 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:21:38,969 [INFO] Read Test1 = 0.5 from IP: 192.168.29.71, ID: 1, Address: 40000
+2025-04-21 21:21:38,969 [INFO] Read Test2 = 327690.0 from IP: 192.168.29.71, ID: 1, Address: 40001
+2025-04-21 21:21:38,970 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-21 21:21:43,982 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:21:43,982 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:21:43,983 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:21:43,983 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:21:43,984 [INFO] Read Date&Time = 0.2 from IP: 127.0.0.1, ID: 1, Address: 40000
+2025-04-21 21:21:43,984 [INFO] Read City = 655364.0 from IP: 127.0.0.1, ID: 1, Address: 40001
+2025-04-21 21:21:43,984 [INFO] Read Daylight Saving Time (DST) = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40003
+2025-04-21 21:21:43,985 [INFO] Read Time Zone = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40004
+2025-04-21 21:21:43,985 [INFO] Read DST state = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40006
+2025-04-21 21:21:43,986 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-21 21:21:43,986 [INFO] Read Next Block Test = 85.0 from IP: 127.0.0.1, ID: 1, Address: 40145
+2025-04-21 21:21:43,987 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-21 21:21:44,012 [INFO] Read Test1 = 0.5 from IP: 192.168.29.71, ID: 1, Address: 40000
+2025-04-21 21:21:44,014 [INFO] Read Test2 = 327690.0 from IP: 192.168.29.71, ID: 1, Address: 40001
+2025-04-21 21:21:44,015 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-21 21:21:49,034 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:21:49,034 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:21:49,035 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:21:49,035 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:21:49,036 [INFO] Read Date&Time = 0.2 from IP: 127.0.0.1, ID: 1, Address: 40000
+2025-04-21 21:21:49,037 [INFO] Read City = 655364.0 from IP: 127.0.0.1, ID: 1, Address: 40001
+2025-04-21 21:21:49,037 [INFO] Read Daylight Saving Time (DST) = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40003
+2025-04-21 21:21:49,037 [INFO] Read Time Zone = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40004
+2025-04-21 21:21:49,038 [INFO] Read DST state = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40006
+2025-04-21 21:21:49,038 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-21 21:21:49,039 [INFO] Read Next Block Test = 85.0 from IP: 127.0.0.1, ID: 1, Address: 40145
+2025-04-21 21:21:49,041 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-21 21:21:49,062 [INFO] Read Test1 = 0.5 from IP: 192.168.29.71, ID: 1, Address: 40000
+2025-04-21 21:21:49,063 [INFO] Read Test2 = 327690.0 from IP: 192.168.29.71, ID: 1, Address: 40001
+2025-04-21 21:21:49,064 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-21 21:21:54,071 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:21:54,072 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:21:54,072 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:21:54,073 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:21:54,074 [INFO] Read Date&Time = 0.2 from IP: 127.0.0.1, ID: 1, Address: 40000
+2025-04-21 21:21:54,075 [INFO] Read City = 655364.0 from IP: 127.0.0.1, ID: 1, Address: 40001
+2025-04-21 21:21:54,077 [INFO] Read Daylight Saving Time (DST) = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40003
+2025-04-21 21:21:54,077 [INFO] Read Time Zone = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40004
+2025-04-21 21:21:54,078 [INFO] Read DST state = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40006
+2025-04-21 21:21:54,079 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-21 21:21:54,081 [INFO] Read Next Block Test = 85.0 from IP: 127.0.0.1, ID: 1, Address: 40145
+2025-04-21 21:21:54,082 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-21 21:21:54,099 [INFO] Read Test1 = 0.5 from IP: 192.168.29.71, ID: 1, Address: 40000
+2025-04-21 21:21:54,100 [INFO] Read Test2 = 327690.0 from IP: 192.168.29.71, ID: 1, Address: 40001
+2025-04-21 21:21:54,101 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-21 21:21:59,116 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:21:59,116 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:21:59,117 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:21:59,117 [INFO] Read Date&Time = 0.2 from IP: 127.0.0.1, ID: 1, Address: 40000
+2025-04-21 21:21:59,117 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:21:59,118 [INFO] Read City = 655364.0 from IP: 127.0.0.1, ID: 1, Address: 40001
+2025-04-21 21:21:59,119 [INFO] Read Daylight Saving Time (DST) = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40003
+2025-04-21 21:21:59,119 [INFO] Read Time Zone = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40004
+2025-04-21 21:21:59,120 [INFO] Read DST state = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40006
+2025-04-21 21:21:59,120 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-21 21:21:59,122 [INFO] Read Next Block Test = 85.0 from IP: 127.0.0.1, ID: 1, Address: 40145
+2025-04-21 21:21:59,124 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-21 21:21:59,144 [INFO] Read Test1 = 0.5 from IP: 192.168.29.71, ID: 1, Address: 40000
+2025-04-21 21:21:59,146 [INFO] Read Test2 = 327685.0 from IP: 192.168.29.71, ID: 1, Address: 40001
+2025-04-21 21:21:59,147 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-21 21:22:04,152 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:22:04,152 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:22:04,153 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:22:04,153 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:22:04,154 [INFO] Read Date&Time = 0.2 from IP: 127.0.0.1, ID: 1, Address: 40000
+2025-04-21 21:22:04,155 [INFO] Read City = 655364.0 from IP: 127.0.0.1, ID: 1, Address: 40001
+2025-04-21 21:22:04,156 [INFO] Read Daylight Saving Time (DST) = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40003
+2025-04-21 21:22:04,156 [INFO] Read Time Zone = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40004
+2025-04-21 21:22:04,157 [INFO] Read DST state = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40006
+2025-04-21 21:22:04,157 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-21 21:22:04,158 [INFO] Read Next Block Test = 85.0 from IP: 127.0.0.1, ID: 1, Address: 40145
+2025-04-21 21:22:04,158 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-21 21:22:04,180 [INFO] Read Test1 = 0.5 from IP: 192.168.29.71, ID: 1, Address: 40000
+2025-04-21 21:22:04,181 [INFO] Read Test2 = 327685.0 from IP: 192.168.29.71, ID: 1, Address: 40001
+2025-04-21 21:22:04,182 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-21 21:22:09,196 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:22:09,197 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:22:09,197 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:22:09,198 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:22:09,199 [INFO] Read Date&Time = 0.2 from IP: 127.0.0.1, ID: 1, Address: 40000
+2025-04-21 21:22:09,200 [INFO] Read City = 655364.0 from IP: 127.0.0.1, ID: 1, Address: 40001
+2025-04-21 21:22:09,201 [INFO] Read Daylight Saving Time (DST) = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40003
+2025-04-21 21:22:09,201 [INFO] Read Time Zone = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40004
+2025-04-21 21:22:09,202 [INFO] Read DST state = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40006
+2025-04-21 21:22:09,202 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-21 21:22:09,205 [INFO] Read Next Block Test = 85.0 from IP: 127.0.0.1, ID: 1, Address: 40145
+2025-04-21 21:22:09,205 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-21 21:22:09,224 [INFO] Read Test1 = 0.5 from IP: 192.168.29.71, ID: 1, Address: 40000
+2025-04-21 21:22:09,226 [INFO] Read Test2 = 327685.0 from IP: 192.168.29.71, ID: 1, Address: 40001
+2025-04-21 21:22:09,227 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-21 21:22:14,245 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:22:14,246 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:22:14,246 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:22:14,246 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:22:14,247 [INFO] Read Date&Time = 0.2 from IP: 127.0.0.1, ID: 1, Address: 40000
+2025-04-21 21:22:14,249 [INFO] Read City = 655364.0 from IP: 127.0.0.1, ID: 1, Address: 40001
+2025-04-21 21:22:14,249 [INFO] Read Daylight Saving Time (DST) = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40003
+2025-04-21 21:22:14,250 [INFO] Read Time Zone = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40004
+2025-04-21 21:22:14,252 [INFO] Read DST state = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40006
+2025-04-21 21:22:14,252 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-21 21:22:14,254 [INFO] Read Next Block Test = 85.0 from IP: 127.0.0.1, ID: 1, Address: 40145
+2025-04-21 21:22:14,255 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-21 21:22:14,274 [INFO] Read Test1 = 0.5 from IP: 192.168.29.71, ID: 1, Address: 40000
+2025-04-21 21:22:14,275 [INFO] Read Test2 = 327685.0 from IP: 192.168.29.71, ID: 1, Address: 40001
+2025-04-21 21:22:14,277 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-21 21:22:19,285 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:22:19,286 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:22:19,286 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:22:19,286 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:22:19,288 [INFO] Read Date&Time = 0.2 from IP: 127.0.0.1, ID: 1, Address: 40000
+2025-04-21 21:22:19,289 [INFO] Read City = 655364.0 from IP: 127.0.0.1, ID: 1, Address: 40001
+2025-04-21 21:22:19,290 [INFO] Read Daylight Saving Time (DST) = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40003
+2025-04-21 21:22:19,290 [INFO] Read Time Zone = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40004
+2025-04-21 21:22:19,291 [INFO] Read DST state = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40006
+2025-04-21 21:22:19,292 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-21 21:22:19,294 [INFO] Read Next Block Test = 85.0 from IP: 127.0.0.1, ID: 1, Address: 40145
+2025-04-21 21:22:19,295 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-21 21:22:19,314 [INFO] Read Test1 = 0.2 from IP: 192.168.29.71, ID: 1, Address: 40000
+2025-04-21 21:22:19,315 [INFO] Read Test2 = 327685.0 from IP: 192.168.29.71, ID: 1, Address: 40001
+2025-04-21 21:22:19,316 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-21 21:22:24,323 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:22:24,323 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:22:24,325 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:22:24,326 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:22:24,327 [INFO] Read Date&Time = 0.2 from IP: 127.0.0.1, ID: 1, Address: 40000
+2025-04-21 21:22:24,328 [INFO] Read City = 655364.0 from IP: 127.0.0.1, ID: 1, Address: 40001
+2025-04-21 21:22:24,328 [INFO] Read Daylight Saving Time (DST) = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40003
+2025-04-21 21:22:24,329 [INFO] Read Time Zone = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40004
+2025-04-21 21:22:24,330 [INFO] Read DST state = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40006
+2025-04-21 21:22:24,331 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-21 21:22:24,333 [INFO] Read Next Block Test = 85.0 from IP: 127.0.0.1, ID: 1, Address: 40145
+2025-04-21 21:22:24,333 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-21 21:22:24,352 [INFO] Read Test1 = 0.2 from IP: 192.168.29.71, ID: 1, Address: 40000
+2025-04-21 21:22:24,354 [INFO] Read Test2 = 327685.0 from IP: 192.168.29.71, ID: 1, Address: 40001
+2025-04-21 21:22:24,354 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-21 21:22:29,371 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:22:29,372 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:22:29,372 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:22:29,372 [INFO] Read Date&Time = 0.2 from IP: 127.0.0.1, ID: 1, Address: 40000
+2025-04-21 21:22:29,374 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:22:29,374 [INFO] Read City = 655364.0 from IP: 127.0.0.1, ID: 1, Address: 40001
+2025-04-21 21:22:29,375 [INFO] Read Daylight Saving Time (DST) = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40003
+2025-04-21 21:22:29,375 [INFO] Read Time Zone = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40004
+2025-04-21 21:22:29,375 [INFO] Read DST state = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40006
+2025-04-21 21:22:29,376 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-21 21:22:29,378 [INFO] Read Next Block Test = 85.0 from IP: 127.0.0.1, ID: 1, Address: 40145
+2025-04-21 21:22:29,379 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-21 21:22:29,400 [INFO] Read Test1 = 0.2 from IP: 192.168.29.71, ID: 1, Address: 40000
+2025-04-21 21:22:29,402 [INFO] Read Test2 = 327685.0 from IP: 192.168.29.71, ID: 1, Address: 40001
+2025-04-21 21:22:29,403 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-21 21:22:34,412 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:22:34,412 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:22:34,413 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:22:34,413 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:22:34,415 [INFO] Read Date&Time = 0.4 from IP: 127.0.0.1, ID: 1, Address: 40000
+2025-04-21 21:22:34,415 [INFO] Read City = 655364.0 from IP: 127.0.0.1, ID: 1, Address: 40001
+2025-04-21 21:22:34,416 [INFO] Read Daylight Saving Time (DST) = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40003
+2025-04-21 21:22:34,416 [INFO] Read Time Zone = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40004
+2025-04-21 21:22:34,417 [INFO] Read DST state = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40006
+2025-04-21 21:22:34,417 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-21 21:22:34,419 [INFO] Read Next Block Test = 85.0 from IP: 127.0.0.1, ID: 1, Address: 40145
+2025-04-21 21:22:34,420 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-21 21:22:34,441 [INFO] Read Test1 = 0.2 from IP: 192.168.29.71, ID: 1, Address: 40000
+2025-04-21 21:22:34,442 [INFO] Read Test2 = 327685.0 from IP: 192.168.29.71, ID: 1, Address: 40001
+2025-04-21 21:22:34,443 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-21 21:22:39,450 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:22:39,451 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:22:39,451 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:22:39,452 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:22:39,454 [INFO] Read Date&Time = 0.4 from IP: 127.0.0.1, ID: 1, Address: 40000
+2025-04-21 21:22:39,455 [INFO] Read City = 655364.0 from IP: 127.0.0.1, ID: 1, Address: 40001
+2025-04-21 21:22:39,455 [INFO] Read Daylight Saving Time (DST) = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40003
+2025-04-21 21:22:39,456 [INFO] Read Time Zone = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40004
+2025-04-21 21:22:39,456 [INFO] Read DST state = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40006
+2025-04-21 21:22:39,457 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-21 21:22:39,458 [INFO] Read Next Block Test = 85.0 from IP: 127.0.0.1, ID: 1, Address: 40145
+2025-04-21 21:22:39,460 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-21 21:22:39,479 [INFO] Read Test1 = 0.2 from IP: 192.168.29.71, ID: 1, Address: 40000
+2025-04-21 21:22:39,480 [INFO] Read Test2 = 327685.0 from IP: 192.168.29.71, ID: 1, Address: 40001
+2025-04-21 21:22:39,481 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-21 21:22:44,500 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:22:44,500 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:22:44,502 [INFO] Read Date&Time = 0.4 from IP: 127.0.0.1, ID: 1, Address: 40000
+2025-04-21 21:22:44,502 [INFO] Read City = 655364.0 from IP: 127.0.0.1, ID: 1, Address: 40001
+2025-04-21 21:22:44,503 [INFO] Read Daylight Saving Time (DST) = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40003
+2025-04-21 21:22:44,504 [INFO] Read Time Zone = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40004
+2025-04-21 21:22:44,504 [INFO] Read DST state = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40006
+2025-04-21 21:22:44,505 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-21 21:22:44,506 [INFO] Read Next Block Test = 85.0 from IP: 127.0.0.1, ID: 1, Address: 40145
+2025-04-21 21:22:44,507 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-21 21:22:44,512 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:22:44,513 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:22:44,527 [INFO] Read Test1 = 0.2 from IP: 192.168.29.71, ID: 1, Address: 40000
+2025-04-21 21:22:44,528 [INFO] Read Test2 = 327685.0 from IP: 192.168.29.71, ID: 1, Address: 40001
+2025-04-21 21:22:44,529 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-21 21:22:49,535 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:22:49,535 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:22:49,536 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:22:49,537 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:22:49,538 [INFO] Read Date&Time = 0.4 from IP: 127.0.0.1, ID: 1, Address: 40000
+2025-04-21 21:22:49,539 [INFO] Read City = 655364.0 from IP: 127.0.0.1, ID: 1, Address: 40001
+2025-04-21 21:22:49,540 [INFO] Read Daylight Saving Time (DST) = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40003
+2025-04-21 21:22:49,541 [INFO] Read Time Zone = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40004
+2025-04-21 21:22:49,541 [INFO] Read DST state = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40006
+2025-04-21 21:22:49,542 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-21 21:22:49,545 [INFO] Read Next Block Test = 85.0 from IP: 127.0.0.1, ID: 1, Address: 40145
+2025-04-21 21:22:49,546 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-21 21:22:49,565 [INFO] Read Test1 = 0.2 from IP: 192.168.29.71, ID: 1, Address: 40000
+2025-04-21 21:22:49,565 [INFO] Read Test2 = 131072.0 from IP: 192.168.29.71, ID: 1, Address: 40001
+2025-04-21 21:22:49,565 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-21 21:22:54,576 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:22:54,576 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:22:54,577 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:22:54,578 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:22:54,579 [INFO] Read Date&Time = 0.4 from IP: 127.0.0.1, ID: 1, Address: 40000
+2025-04-21 21:22:54,581 [INFO] Read City = 655364.0 from IP: 127.0.0.1, ID: 1, Address: 40001
+2025-04-21 21:22:54,581 [INFO] Read Daylight Saving Time (DST) = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40003
+2025-04-21 21:22:54,582 [INFO] Read Time Zone = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40004
+2025-04-21 21:22:54,583 [INFO] Read DST state = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40006
+2025-04-21 21:22:54,584 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-21 21:22:54,585 [INFO] Read Next Block Test = 85.0 from IP: 127.0.0.1, ID: 1, Address: 40145
+2025-04-21 21:22:54,586 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-21 21:22:54,605 [INFO] Read Test1 = 0.2 from IP: 192.168.29.71, ID: 1, Address: 40000
+2025-04-21 21:22:54,606 [INFO] Read Test2 = 131082.0 from IP: 192.168.29.71, ID: 1, Address: 40001
+2025-04-21 21:22:54,607 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-21 21:22:59,625 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:22:59,626 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:22:59,626 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:22:59,627 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:22:59,628 [INFO] Read Date&Time = 0.4 from IP: 127.0.0.1, ID: 1, Address: 40000
+2025-04-21 21:22:59,630 [INFO] Read City = 655364.0 from IP: 127.0.0.1, ID: 1, Address: 40001
+2025-04-21 21:22:59,630 [INFO] Read Daylight Saving Time (DST) = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40003
+2025-04-21 21:22:59,631 [INFO] Read Time Zone = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40004
+2025-04-21 21:22:59,631 [INFO] Read DST state = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40006
+2025-04-21 21:22:59,632 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-21 21:22:59,634 [INFO] Read Next Block Test = 85.0 from IP: 127.0.0.1, ID: 1, Address: 40145
+2025-04-21 21:22:59,635 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-21 21:22:59,654 [INFO] Read Test1 = 0.2 from IP: 192.168.29.71, ID: 1, Address: 40000
+2025-04-21 21:22:59,655 [INFO] Read Test2 = 10.0 from IP: 192.168.29.71, ID: 1, Address: 40001
+2025-04-21 21:22:59,656 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-21 21:23:04,672 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:23:04,672 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:23:04,673 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:23:04,674 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:23:04,675 [INFO] Read Date&Time = 0.4 from IP: 127.0.0.1, ID: 1, Address: 40000
+2025-04-21 21:23:04,676 [INFO] Read City = 655364.0 from IP: 127.0.0.1, ID: 1, Address: 40001
+2025-04-21 21:23:04,677 [INFO] Read Daylight Saving Time (DST) = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40003
+2025-04-21 21:23:04,678 [INFO] Read Time Zone = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40004
+2025-04-21 21:23:04,678 [INFO] Read DST state = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40006
+2025-04-21 21:23:04,680 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-21 21:23:04,682 [INFO] Read Next Block Test = 85.0 from IP: 127.0.0.1, ID: 1, Address: 40145
+2025-04-21 21:23:04,683 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-21 21:23:04,700 [INFO] Read Test1 = 0.2 from IP: 192.168.29.71, ID: 1, Address: 40000
+2025-04-21 21:23:04,703 [INFO] Read Test2 = 10.0 from IP: 192.168.29.71, ID: 1, Address: 40001
+2025-04-21 21:23:04,704 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-21 21:23:09,715 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:23:09,716 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:23:09,716 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:23:09,716 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:23:09,718 [INFO] Read Date&Time = 0.4 from IP: 127.0.0.1, ID: 1, Address: 40000
+2025-04-21 21:23:09,719 [INFO] Read City = 655364.0 from IP: 127.0.0.1, ID: 1, Address: 40001
+2025-04-21 21:23:09,720 [INFO] Read Daylight Saving Time (DST) = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40003
+2025-04-21 21:23:09,721 [INFO] Read Time Zone = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40004
+2025-04-21 21:23:09,723 [INFO] Read DST state = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40006
+2025-04-21 21:23:09,723 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-21 21:23:09,725 [INFO] Read Next Block Test = 85.0 from IP: 127.0.0.1, ID: 1, Address: 40145
+2025-04-21 21:23:09,726 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-21 21:23:09,744 [INFO] Read Test1 = 0.2 from IP: 192.168.29.71, ID: 1, Address: 40000
+2025-04-21 21:23:09,745 [INFO] Read Test2 = 10.0 from IP: 192.168.29.71, ID: 1, Address: 40001
+2025-04-21 21:23:09,746 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-21 21:23:14,755 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:23:14,755 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:23:14,756 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:23:14,757 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:23:14,758 [INFO] Read Date&Time = 0.4 from IP: 127.0.0.1, ID: 1, Address: 40000
+2025-04-21 21:23:14,759 [INFO] Read City = 655364.0 from IP: 127.0.0.1, ID: 1, Address: 40001
+2025-04-21 21:23:14,760 [INFO] Read Daylight Saving Time (DST) = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40003
+2025-04-21 21:23:14,761 [INFO] Read Time Zone = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40004
+2025-04-21 21:23:14,762 [INFO] Read DST state = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40006
+2025-04-21 21:23:14,763 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-21 21:23:14,765 [INFO] Read Next Block Test = 85.0 from IP: 127.0.0.1, ID: 1, Address: 40145
+2025-04-21 21:23:14,766 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-21 21:23:14,784 [INFO] Read Test1 = 0.2 from IP: 192.168.29.71, ID: 1, Address: 40000
+2025-04-21 21:23:14,785 [INFO] Read Test2 = 10.0 from IP: 192.168.29.71, ID: 1, Address: 40001
+2025-04-21 21:23:14,786 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-21 21:23:19,797 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-21 21:23:19,797 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-21 21:23:19,797 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-21 21:23:19,798 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-21 21:23:19,798 [INFO] Read Date&Time = 0.4 from IP: 127.0.0.1, ID: 1, Address: 40000
+2025-04-21 21:23:19,799 [INFO] Read City = 655364.0 from IP: 127.0.0.1, ID: 1, Address: 40001
+2025-04-21 21:23:19,799 [INFO] Read Daylight Saving Time (DST) = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40003
+2025-04-21 21:23:19,799 [INFO] Read Time Zone = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40004
+2025-04-21 21:23:19,800 [INFO] Read DST state = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40006
+2025-04-21 21:23:19,800 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-21 21:23:19,801 [INFO] Read Next Block Test = 85.0 from IP: 127.0.0.1, ID: 1, Address: 40145
+2025-04-21 21:23:19,801 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-21 21:23:19,826 [INFO] Read Test1 = 0.2 from IP: 192.168.29.71, ID: 1, Address: 40000
+2025-04-21 21:23:19,828 [INFO] Read Test2 = 10.0 from IP: 192.168.29.71, ID: 1, Address: 40001
+2025-04-21 21:23:19,828 [INFO] Disconnected from IP: 192.168.29.71, ID: 1

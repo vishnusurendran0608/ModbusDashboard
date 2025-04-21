@@ -29,17 +29,11 @@ with open("settings.json") as f:
 register_map = parse_register_map("data/register_map.csv")
 device_map = parse_device_map("data/device_map.csv")
 
+max_registers = settings.get("max_registers", 100)
+
 data_lock = threading.Lock()
-device_data = defaultdict(dict)
-
+device_data = defaultdict(list)
 polling_locks = defaultdict(threading.Lock)
-
-def read_registers(client, unit_id, address, count):
-    try:
-        return client.read_holding_registers(address=address, count=count, slave=unit_id)
-    except Exception as e:
-        logger.error(f"Error reading from Unit ID {unit_id}: {e}")
-        return None
 
 def poll_device(device):
     ip = device['ip_address']
@@ -55,7 +49,8 @@ def poll_device(device):
             return
 
         logger.info(f"Connected to device at IP: {ip}, ID: {unit_id}")
-        device_data[device_key] = {}
+        with data_lock:
+            device_data[device_key] = []
 
         regs = [r for r in register_map if r['device_type_id'] == device['device_type_id']]
         regs.sort(key=lambda r: int(r['address']))
@@ -63,6 +58,20 @@ def poll_device(device):
         i = 0
         while i < len(regs):
             start_address = int(regs[i]['address'])
+
+            # Determine function code and base address
+            if 30000 <= start_address < 40000:
+                fc = 4
+                base = 30000
+            elif 40000 <= start_address < 50000:
+                fc = 3
+                base = 40000
+            else:
+                logger.warning(f"Unsupported address range at {start_address}, skipping")
+                i += 1
+                continue
+
+            start_address_mod = start_address - base
             block = [regs[i]]
             total_regs = int(regs[i]['quantity'])
 
@@ -70,7 +79,7 @@ def poll_device(device):
             while j < len(regs):
                 next_addr = int(regs[j]['address'])
                 next_qty = int(regs[j]['quantity'])
-                if next_addr + next_qty - start_address <= 125:
+                if next_addr + next_qty - start_address <= max_registers:
                     block.append(regs[j])
                     total_regs = (next_addr + next_qty) - start_address
                     j += 1
@@ -78,8 +87,15 @@ def poll_device(device):
                     break
 
             end_address = start_address + total_regs - 1
-            logger.info(f"Reading from Device IP: {ip}, ID: {unit_id}, Address Block: {start_address} to {end_address}")
-            result = read_registers(client, unit_id, start_address, total_regs)
+            logger.info(f"Reading from Device IP: {ip}, ID: {unit_id}, Function Code: {fc}, Address Block: {start_address} to {end_address}")
+
+            # Perform correct read based on function code
+            if fc == 3:
+                result = client.read_holding_registers(address=start_address_mod, count=total_regs, slave=unit_id)
+            elif fc == 4:
+                result = client.read_input_registers(address=start_address_mod, count=total_regs, slave=unit_id)
+            else:
+                result = None
 
             if result and not result.isError():
                 for reg in block:
@@ -92,21 +108,17 @@ def poll_device(device):
                         raw_values = result.registers[offset:offset+quantity]
                         value = apply_byte_order(raw_values, reg['type'], swap_bytes)
 
-                        # Apply gain to the final decoded value
                         gain = float(reg.get('gain', 1))
                         if gain != 0:
                             value = value / gain
 
                         with data_lock:
-                            #device_data[device_key][variable] = value
-                            if device_key not in device_data or not isinstance(device_data[device_key], list):
-                               device_data[device_key] = []
                             device_data[device_key].append({
-                                       "address": addr,
-                                       "variable_name": variable,
-                                       "value": value,
-                                       "unit": reg.get("unit", "")
-                             })
+                                "address": addr,
+                                "variable_name": variable,
+                                "value": value,
+                                "unit": reg.get("unit", "")
+                            })
 
                         logger.info(f"Read {variable} = {value} from IP: {ip}, ID: {unit_id}, Address: {addr}")
                     except Exception as e:
@@ -134,4 +146,4 @@ def poll_devices():
 
 def get_data():
     with data_lock:
-         return json.loads(json.dumps(device_data, default=str))
+        return device_data

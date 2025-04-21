@@ -2,6 +2,7 @@
     "polling_interval": 5,
     "log_file_max_size_mb": 10,
     "max_log_files": 5,
-    "port": 5000
+    "port": 5000,
+    "max_registers": 100
   }
   
