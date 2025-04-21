@@ -37,7 +37,7 @@ polling_locks = defaultdict(threading.Lock)
 
 def poll_device(device):
     ip = device['ip_address']
-    port = int(device.get('port', 1502))
+    port = int(device.get('port', 502))
     unit_id = int(device['slave_id'])
     swap_bytes = device.get('byte_swap', 'none')
     device_key = f"{ip}_{unit_id}"
