@@ -1,3 +1,2 @@
 ﻿slave_id,device_type,device_type_id,ip_address,byte_swap
 1,Smart Logger,1,192.168.0.10,FALSE
-6,Power Meter,3,192.168.0.10,FALSE
