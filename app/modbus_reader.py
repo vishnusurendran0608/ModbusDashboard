@@ -10,6 +10,20 @@ from datetime import datetime
 import os
 from collections import defaultdict
 
+from paho.mqtt import client as mqtt_client
+
+mqtt_config = settings.get("mqtt", {})
+mqtt_client_instance = None
+
+if mqtt_config.get("enabled", False):
+    mqtt_client_instance = mqtt_client.Client()
+    try:
+        mqtt_client_instance.connect(mqtt_config["broker"], mqtt_config.get("port", 1883))
+        logger.info(f"Connected to MQTT broker at {mqtt_config['broker']}:{mqtt_config.get('port', 1883)}")
+    except Exception as e:
+        logger.error(f"MQTT connection failed: {e}")
+        mqtt_client_instance = None
+
 # Ensure logs directory exists
 os.makedirs("logs", exist_ok=True)
 
@@ -157,6 +171,26 @@ def poll_devices():
 
         time.sleep(settings.get("poll_interval", 5))
 
+def publish_to_mqtt():
+    while True:
+        if mqtt_client_instance:
+            try:
+                with data_lock:
+                    payload = json.dumps(device_data, default=str)
+                mqtt_client_instance.publish(mqtt_config.get("topic", "renewablebot/modbus"), payload)
+                logger.info(f"Published data to MQTT topic {mqtt_config.get('topic')}")
+            except Exception as e:
+                logger.error(f"Failed to publish to MQTT: {e}")
+        time.sleep(mqtt_config.get("publish_interval", 10))
+
 def get_data():
     with data_lock:
         return device_data
+
+def start_mqtt_thread():
+    if mqtt_client_instance:
+        mqtt_thread = threading.Thread(target=publish_to_mqtt, daemon=True)
+        mqtt_thread.start()
+        logger.info("Started MQTT publishing thread")
+    else:
+        logger.warning("MQTT is disabled or not connected. Skipping MQTT thread.")
