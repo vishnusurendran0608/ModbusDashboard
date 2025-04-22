@@ -73,28 +73,101 @@
 1,Smart Logger,Current error during scanning,RW,U16,N/A,100,42150,1
 1,Smart Logger,Inspection,WO,U16,N/A,1,42730,1
 1,Smart Logger,IV curve scanning,WO,U16,N/A,1,42779,1
-2,Inverter,Meter status,RO,U16,N/A,1,37100,1
-2,Inverter,Grid voltage (A phase),RO,I32,V,10,37101,2
-2,Inverter,B phase voltage,RO,I32,V,10,37103,2
-2,Inverter,C phase voltage,RO,I32,V,10,37105,2
-2,Inverter,Grid current(A phase),RO,I32,A,100,37107,2
-2,Inverter,B phase current,RO,I32,A,100,37109,2
-2,Inverter,C phase current,RO,I32,A,100,37111,2
-2,Inverter,Active power,RO,I32,W,1,37113,2
-2,Inverter,Reactive power,RO,I32,Var,1,37115,2
-2,Inverter,Power factor,RO,I16,NA,1000,37117,1
-2,Inverter,Grid frequency,RO,I16,Hz,100,37118,1
-2,Inverter,Positive active electricity,RO,I32,kWh,100,37119,2
-2,Inverter,Reverse active power,RO,I32,kWh,100,37121,2
-2,Inverter,Accumulat ed reactive power,RO,I32,kVar h,100,37123,2
-2,Inverter,Meter type,RO,U16,N/A,1,37125,1
-2,Inverter,A-B line voltage,RO,I32,V,10,37126,2
-2,Inverter,B-C line voltage,RO,I32,V,10,37128,2
-2,Inverter,CA line voltage,RO,I32,V,10,37130,2
-2,Inverter,A phase active power,RO,I32,W,1,37132,2
-2,Inverter,B phase active power,RO,I32,W,1,37134,2
-2,Inverter,C phase active power,RO,I32,W,1,37136,2
-2,Inverter,Meter model detection result,RO,U16,N/A,1,37138,1
+2,Inverter,Model ID,RO,U16,N/A,1,30070,1
+2,Inverter,Number of PV strings,RO,U16,N/A,1,30071,1
+2,Inverter,Number of MPP trackers,RO,U16,N/A,1,30072,1
+2,Inverter,Rated power (Pn),RO,U32,kW,1000,30073,2
+2,Inverter,Maximum active power (Pmax),RO,U32,kW,1000,30075,2
+2,Inverter,Maximum apparent power (Smax),RO,U32,kVA,1000,30077,2
+2,Inverter,"Maximum reactive power (Qmax, fed to the power grid)",RO,I32,kVar,1000,30079,2
+2,Inverter,"Maximum reactive power (Qmax,absorbed from the power grid)",RO,I32,kVar,1000,30081,2
+2,Inverter,[Remote communicati on] Single- machine remote communicati on,RO,U16,N/A,1,32000,1
+2,Inverter,[Remote communicati on] Running status (monitoring processing),RO,U16,N/A,1,32002,1
+2,Inverter,[Remote communicati on] Running status (power processing),RO,U32,N/A,1,32003,2
+2,Inverter,Alarm 1,RO,U16,N/A,1,32008,1
+2,Inverter,Alarm 2,RO,U16,N/A,1,32009,1
+2,Inverter,Alarm 3,RO,U16,N/A,1,32010,1
+2,Inverter,ESN,RO,U16,N/A,1,32015,1
+2,Inverter,PV1 voltage,RO,I16,V,10,32016,1
+2,Inverter,PV1 current,RO,I16,A,100,32017,1
+2,Inverter,PV2 voltage,RO,I16,V,10,32018,1
+2,Inverter,PV2 current,RO,I16,A,100,32019,1
+2,Inverter,PV3 voltage,RO,I16,V,10,32020,1
+2,Inverter,PV3 current,RO,I16,A,100,32021,1
+2,Inverter,PV4 voltage,RO,I16,V,10,32022,1
+2,Inverter,PV4 current,RO,I16,A,100,32023,1
+2,Inverter,Input power,RO,I32,kW,1000,32064,2
+2,Inverter,Power grid voltage/Line voltage between phases A and B,RO,U16,V,10,32066,1
+2,Inverter,Line voltage between phases B and C,RO,U16,V,10,32067,1
+2,Inverter,Line voltage between phases C and A,RO,U16,V,10,32068,1
+2,Inverter,Phase A voltage,RO,U16,V,10,32069,1
+2,Inverter,Phase B voltage,RO,U16,V,10,32070,1
+2,Inverter,Phase C voltage,RO,U16,V,10,32071,1
+2,Inverter,Power grid current/ Phase A current,RO,I32,A,1000,32072,2
+2,Inverter,Phase B current,RO,I32,A,1000,32074,2
+2,Inverter,Phase C current,RO,I32,A,1000,32076,2
+2,Inverter,Peak active power of current day,RO,I32,kW,1000,32078,2
+2,Inverter,Active power,RO,I32,kW,1000,32080,2
+2,Inverter,Reactive power,RO,I32,kVar,1000,32082,2
+2,Inverter,Power factor,RO,I16,N/A,1000,32084,1
+2,Inverter,Grid frequency,RO,U16,Hz,100,32085,1
+2,Inverter,Efficiency,RO,U16,%,100,32086,1
+2,Inverter,Internal temperature,RO,I16,°C,10,32087,1
+2,Inverter,Insulation resistance,RO,U16,MΩ,1000,32088,1
+2,Inverter,Device status,RO,U16,N/A,1,32089,1
+2,Inverter,Fault code,RO,U16,N/A,1,32090,1
+2,Inverter,Startup time,RO,U32,s,1,32091,2
+2,Inverter,Shutdown time,RO,U32,s,1,32093,2
+2,Inverter,Accumulate d energy yield,RO,U32,kWh,100,32106,2
+2,Inverter,Daily energy yield,RO,U32,kWh,100,32114,2
+2,Inverter,[Manageme nt system] Managemen t system status,RO,U16,N/A,1,35127,1
+2,Inverter,[Smart I-V Curve Diagnosis] Authorizatio n function,RO,U32,N/A,1,35136,2
+2,Inverter,[Smart I-V Curve Diagnosis] License status,RO,U16,N/A,1,35138,1
+2,Inverter,[Smart I-V Curve Diagnosis] License expiration time,RO,U32,s,1,35139,2
+2,Inverter,License loading time,RO,U32,s,1,35141,2
+2,Inverter,License revocation time,RO,U32,s,1,35143,2
+2,Inverter,[4G] Module status,RO,U16,N/A,1,35249,1
+2,Inverter,[4G] IP address,RO,U32,N/A,1,35250,2
+2,Inverter,[4G] Subnet mask,RO,U32,N/A,1,35252,2
+2,Inverter,[4G] Signal strength,RO,U16,N/A,1,35264,1
+2,Inverter,[4G] Maximum number of PIN attempts,RO,U16,N/A,1,35265,1
+2,Inverter,[4G] PIN verification status,RO,U16,N/A,1,35266,1
+2,Inverter,[System level] Charge/ Discharge mode,RO,U16,N/A,1,37006,1
+2,Inverter,[Power meter collection] Active power*,RO,I32,W,1,37113,2
+2,Inverter,[Optimizer] Total number of optimizers*,RO,U16,N/A,1,37200,1
+2,Inverter,[Optimizer] Number of online optimizers*,RO,U16,N/A,1,37201,1
+2,Inverter,[Optimizer] Feature data*,RO,U16,N/A,1,37202,1
+2,Inverter,System time,RW,U32,s,1,40000,2
+2,Inverter,[Power grid scheduling] Q-U characteristi c curve mode*,RW,U16,N/A,1,40037,1
+2,Inverter,[Power grid scheduling] Q-U dispatch trigger power (%)*,RW,I16,%,1,40038,1
+2,Inverter,[Power grid scheduling] Fixed active power derated,RW,U16,kW,10,40120,1
+2,Inverter,power factor,RW,I16,N/A,1000,40122,1
+2,Inverter,[Power grid scheduling] Reactive power compensatio n (Q/S),RW,I16,N/A,1000,40123,1
+2,Inverter,[Power grid scheduling] Active power percentage derating (0.1%),RW,I16,%,10,40125,1
+2,Inverter,[Power grid scheduling] Fixed active power derated (W),RW,U32,W,1,40126,2
+2,Inverter,[Power grid scheduling] Reactive power compensatio n at night (kVar),RW,I32,kVar,1000,40129,2
+2,Inverter,[Power grid scheduling] Reactive power adjustment time,RW,U16,s,1,40196,1
+2,Inverter,[Power grid scheduling] Q-U power percentage to exit scheduling*,RW,I16,%,1,40198,1
+2,Inverter,Startup,WO,U16,N/A,1,40200,1
+2,Inverter,Shutdown,WO,U16,N/A,1,40201,1
+2,Inverter,Grid code,RW,U16,NA,1,42000,1
+2,Inverter,[Power grid scheduling] Reactive power change gradient,RW,U32,%/s,1000,42015,2
+2,Inverter,[Power grid scheduling] Active power change gradient,RW,U32,%/s,1000,42017,2
+2,Inverter,[Power grid scheduling] Schedule instruction valid duration,RW,U32,s,1,42019,2
+2,Inverter,Failsafe Active Power Limit [kW] [High Accuracy],RW,I32,kW,1000,42405,2
+2,Inverter,Time zone,RW,I16,min,1,43006,1
+2,Inverter,[Manageme nt system] TLS encryption,RW,U16,N/A,1,43098,1
+2,Inverter,WLAN wakeup,RW,U16,N/A,1,45052,1
+2,Inverter,Fast power scheduling,RW,U16,N/A,1,45086,1
+2,Inverter,[Inverter level] Remote charge/ discharge control mode,RW,U16,N/A,1,47589,1
+2,Inverter,Scheduled task,RW,U16,N/A,1,47674,1
+2,Inverter,Default maximum feed-in power,RW,I32,kW,1000,47675,2
+2,Inverter,Default active power change gradient,RW,U32,%/s,1000,47677,2
+2,Inverter,Peak Shaving,RW,U16,N/A,1,47954,1
+2,Inverter,Backup power SOC for peak shaving,RW,U16,%,10,47955,1
+2,Inverter,AI optical storage,RW,U16,N/A,1,48020,1
+2,Inverter,Backup Box model,RW,U16,N/A,1,48089,1
+2,Inverter,Phase-to- ground short-circuit protection,RW,U16,N/A,1,48090,1
 3,Power Meter,Phase A voltage,RO,U32,V,100,32260,2
 3,Power Meter,Phase B voltage,RO,U32,V,100,32262,2
 3,Power Meter,Phase C voltage,RO,U32,V,100,32264,2
