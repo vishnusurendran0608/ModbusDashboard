@@ -34,12 +34,15 @@
       tablesContainer.innerHTML = '';
 
       Object.entries(data).forEach(([deviceKey, vars], index) => {
+        if (!vars.length) return;
+
         const [ip, id] = deviceKey.split("_");
+        const deviceName = vars[0].device_name || `Device ${id}`;
 
         // Create tab
         const tab = document.createElement("div");
         tab.className = "tab" + (index === 0 ? " active" : "");
-        tab.textContent = `Device ${id} (${ip})`;
+        tab.textContent = `${deviceName} (${ip})`;
         tab.dataset.device = deviceKey;
         tabsContainer.appendChild(tab);
 
@@ -52,7 +55,7 @@
         const thead = document.createElement("thead");
         thead.innerHTML = `
           <tr>
-            <th>Device ID</th>
+            <th>Device Name</th>
             <th>IP Address</th>
             <th>Address</th>
             <th>Variable</th>
@@ -66,7 +69,7 @@
         for (const entry of vars) {
           const row = document.createElement("tr");
           row.innerHTML = `
-            <td>${id}</td>
+            <td>${entry.device_name || deviceName}</td>
             <td>${ip}</td>
             <td>${entry.address ?? "-"}</td>
             <td>${entry.variable_name}</td>

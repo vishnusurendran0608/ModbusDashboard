@@ -129,7 +129,8 @@ def poll_device(device):
                                 "address": addr,
                                 "variable_name": variable,
                                 "value": value,
-                                "unit": reg.get("unit", "")
+                                "unit": reg.get("unit", ""),
+                                "device_name": device["device_type"]
                             })
 
                         logger.info(f"Read {variable} = {value} from IP: {ip}, ID: {unit_id}, Address: {addr}")
