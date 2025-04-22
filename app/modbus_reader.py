@@ -12,17 +12,6 @@ from collections import defaultdict
 
 from paho.mqtt import client as mqtt_client
 
-mqtt_config = settings.get("mqtt", {})
-mqtt_client_instance = None
-
-if mqtt_config.get("enabled", False):
-    mqtt_client_instance = mqtt_client.Client()
-    try:
-        mqtt_client_instance.connect(mqtt_config["broker"], mqtt_config.get("port", 1883))
-        logger.info(f"Connected to MQTT broker at {mqtt_config['broker']}:{mqtt_config.get('port', 1883)}")
-    except Exception as e:
-        logger.error(f"MQTT connection failed: {e}")
-        mqtt_client_instance = None
 
 # Ensure logs directory exists
 os.makedirs("logs", exist_ok=True)
@@ -170,6 +159,21 @@ def poll_devices():
             t.join()
 
         time.sleep(settings.get("poll_interval", 5))
+
+
+
+mqtt_config = settings.get("mqtt", {})
+mqtt_client_instance = None
+
+if mqtt_config.get("enabled", False):
+    mqtt_client_instance = mqtt_client.Client()
+    try:
+        mqtt_client_instance.connect(mqtt_config["broker"], mqtt_config.get("port", 1883))
+        logger.info(f"Connected to MQTT broker at {mqtt_config['broker']}:{mqtt_config.get('port', 1883)}")
+    except Exception as e:
+        logger.error(f"MQTT connection failed: {e}")
+        mqtt_client_instance = None
+
 
 def publish_to_mqtt():
     while True:
