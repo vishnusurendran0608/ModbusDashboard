@@ -17087,3 +17087,50 @@
 2025-04-21 21:23:19,826 [INFO] Read Test1 = 0.2 from IP: 192.168.29.71, ID: 1, Address: 40000
 2025-04-21 21:23:19,828 [INFO] Read Test2 = 10.0 from IP: 192.168.29.71, ID: 1, Address: 40001
 2025-04-21 21:23:19,828 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-22 14:24:06,794 [INFO] Connected to MQTT broker at broker.emqx.io:1883
+2025-04-22 14:24:07,008 [INFO] Started MQTT publishing thread
+2025-04-22 14:24:07,008 [INFO] Published data to MQTT topic renewablebot/modbus
+2025-04-22 14:24:07,009 [INFO] Using local IP 172.20.10.3 to connect to 192.168.0.10:502
+2025-04-22 14:24:10,019 [WARNING] Unable to connect to IP: 192.168.0.10, ID: 1
+2025-04-22 14:24:10,020 [INFO] Using local IP 172.20.10.3 to connect to 192.168.0.10:502
+2025-04-22 14:24:13,028 [WARNING] Unable to connect to IP: 192.168.0.10, ID: 12
+2025-04-22 14:24:13,028 [INFO] Using local IP 172.20.10.3 to connect to 192.168.0.10:502
+2025-04-22 14:24:16,042 [WARNING] Unable to connect to IP: 192.168.0.10, ID: 13
+2025-04-22 14:24:16,044 [INFO] Using local IP 172.20.10.3 to connect to 192.168.0.10:502
+2025-04-22 14:24:17,023 [INFO] Published data to MQTT topic renewablebot/modbus
+2025-04-22 14:24:19,052 [WARNING] Unable to connect to IP: 192.168.0.10, ID: 14
+2025-04-22 14:24:19,053 [INFO] Using local IP 172.20.10.3 to connect to 192.168.0.10:502
+2025-04-22 14:24:22,062 [WARNING] Unable to connect to IP: 192.168.0.10, ID: 6
+2025-04-22 14:24:27,031 [INFO] Published data to MQTT topic renewablebot/modbus
+2025-04-22 14:24:27,077 [INFO] Using local IP 172.20.10.3 to connect to 192.168.0.10:502
+2025-04-22 14:24:30,082 [WARNING] Unable to connect to IP: 192.168.0.10, ID: 1
+2025-04-22 14:24:30,083 [INFO] Using local IP 172.20.10.3 to connect to 192.168.0.10:502
+2025-04-22 14:24:33,094 [WARNING] Unable to connect to IP: 192.168.0.10, ID: 12
+2025-04-22 14:24:33,095 [INFO] Using local IP 172.20.10.3 to connect to 192.168.0.10:502
+2025-04-22 14:24:36,110 [WARNING] Unable to connect to IP: 192.168.0.10, ID: 13
+2025-04-22 14:24:36,111 [INFO] Using local IP 172.20.10.3 to connect to 192.168.0.10:502
+2025-04-22 14:24:37,040 [INFO] Published data to MQTT topic renewablebot/modbus
+2025-04-22 14:24:39,125 [WARNING] Unable to connect to IP: 192.168.0.10, ID: 14
+2025-04-22 14:24:39,126 [INFO] Using local IP 172.20.10.3 to connect to 192.168.0.10:502
+2025-04-22 14:24:42,142 [WARNING] Unable to connect to IP: 192.168.0.10, ID: 6
+2025-04-22 14:24:47,054 [INFO] Published data to MQTT topic renewablebot/modbus
+2025-04-22 14:24:47,148 [INFO] Using local IP 172.20.10.3 to connect to 192.168.0.10:502
+2025-04-22 14:24:50,164 [WARNING] Unable to connect to IP: 192.168.0.10, ID: 1
+2025-04-22 14:24:50,165 [INFO] Using local IP 172.20.10.3 to connect to 192.168.0.10:502
+2025-04-22 14:24:53,168 [WARNING] Unable to connect to IP: 192.168.0.10, ID: 12
+2025-04-22 14:24:53,169 [INFO] Using local IP 172.20.10.3 to connect to 192.168.0.10:502
+2025-04-22 14:24:56,179 [WARNING] Unable to connect to IP: 192.168.0.10, ID: 13
+2025-04-22 14:24:56,180 [INFO] Using local IP 172.20.10.3 to connect to 192.168.0.10:502
+2025-04-22 14:24:57,062 [INFO] Published data to MQTT topic renewablebot/modbus
+2025-04-22 14:24:59,185 [WARNING] Unable to connect to IP: 192.168.0.10, ID: 14
+2025-04-22 14:24:59,186 [INFO] Using local IP 172.20.10.3 to connect to 192.168.0.10:502
+2025-04-22 14:25:02,203 [WARNING] Unable to connect to IP: 192.168.0.10, ID: 6
+2025-04-22 14:25:07,069 [INFO] Published data to MQTT topic renewablebot/modbus
+2025-04-22 14:25:07,210 [INFO] Using local IP 172.20.10.3 to connect to 192.168.0.10:502
+2025-04-22 14:25:10,217 [WARNING] Unable to connect to IP: 192.168.0.10, ID: 1
+2025-04-22 14:25:10,217 [INFO] Using local IP 172.20.10.3 to connect to 192.168.0.10:502
+2025-04-22 14:25:13,224 [WARNING] Unable to connect to IP: 192.168.0.10, ID: 12
+2025-04-22 14:25:13,224 [INFO] Using local IP 172.20.10.3 to connect to 192.168.0.10:502
+2025-04-22 14:25:16,227 [WARNING] Unable to connect to IP: 192.168.0.10, ID: 13
+2025-04-22 14:25:16,228 [INFO] Using local IP 172.20.10.3 to connect to 192.168.0.10:502
+2025-04-22 14:25:17,079 [INFO] Published data to MQTT topic renewablebot/modbus
