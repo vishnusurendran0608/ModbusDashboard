@@ -6,7 +6,7 @@
     "max_registers": 100,
     "mqtt": {
       "enabled": true,
-      "broker": "broker.emqx.io",
+      "broker": "public-mqtt-broker.bevywise.com",
       "port": 1883,
       "topic": "renewablebot/modbus",
       "publish_interval": 10
