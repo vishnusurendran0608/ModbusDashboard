@@ -22,35 +22,49 @@
   <div id="tables"></div>
 
   <script>
+    let currentDeviceKey = null;
+  
     async function fetchData() {
       const response = await fetch('/data');
       return await response.json();
     }
-
+  
     function renderTabs(data) {
       const tabsContainer = document.getElementById("tabs");
       const tablesContainer = document.getElementById("tables");
+  
       tabsContainer.innerHTML = '';
       tablesContainer.innerHTML = '';
-
-      Object.entries(data).forEach(([deviceKey, vars], index) => {
+  
+      const deviceKeys = Object.keys(data);
+      if (!currentDeviceKey || !deviceKeys.includes(currentDeviceKey)) {
+        currentDeviceKey = deviceKeys[0]; // fallback to first available tab
+      }
+  
+      deviceKeys.forEach(deviceKey => {
+        const vars = data[deviceKey];
         if (!vars.length) return;
-
+  
         const [ip, id] = deviceKey.split("_");
         const deviceName = vars[0].device_name || `Device ${id}`;
-
+  
         // Create tab
         const tab = document.createElement("div");
-        tab.className = "tab" + (index === 0 ? " active" : "");
+        tab.className = "tab" + (deviceKey === currentDeviceKey ? " active" : "");
         tab.textContent = `${deviceName} (${ip})`;
         tab.dataset.device = deviceKey;
         tabsContainer.appendChild(tab);
-
+  
+        tab.addEventListener("click", () => {
+          currentDeviceKey = deviceKey;
+          renderTabs(data); // re-render tabs with new active selection
+        });
+  
         // Create table
         const container = document.createElement("div");
-        container.className = "table-container" + (index === 0 ? " active" : "");
+        container.className = "table-container" + (deviceKey === currentDeviceKey ? " active" : "");
         container.id = deviceKey;
-
+  
         const table = document.createElement("table");
         const thead = document.createElement("thead");
         thead.innerHTML = `
@@ -64,7 +78,7 @@
           </tr>
         `;
         table.appendChild(thead);
-
+  
         const tbody = document.createElement("tbody");
         for (const entry of vars) {
           const row = document.createElement("tr");
@@ -78,28 +92,18 @@
           `;
           tbody.appendChild(row);
         }
-
+  
         table.appendChild(tbody);
         container.appendChild(table);
         tablesContainer.appendChild(container);
       });
-
-      // Tab switching logic
-      document.querySelectorAll(".tab").forEach(tab => {
-        tab.addEventListener("click", () => {
-          document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
-          document.querySelectorAll(".table-container").forEach(tc => tc.classList.remove("active"));
-          tab.classList.add("active");
-          document.getElementById(tab.dataset.device).classList.add("active");
-        });
-      });
     }
-
+  
     async function refresh() {
       const data = await fetchData();
       renderTabs(data);
     }
-
+  
     window.onload = () => {
       refresh();
       setInterval(refresh, 5000);
