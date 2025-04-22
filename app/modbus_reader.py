@@ -181,7 +181,12 @@ def publish_to_mqtt():
             try:
                 with data_lock:
                     payload = json.dumps(device_data, default=str)
-                mqtt_client_instance.publish(mqtt_config.get("topic", "renewablebot/modbus"), payload)
+                    mqtt_client_instance.publish(
+                    mqtt_config.get("topic", "renewablebot/modbus"),
+                    payload,
+                    qos=1,
+                    retain=True
+                    )
                 logger.info(f"Published data to MQTT topic {mqtt_config.get('topic')}")
             except Exception as e:
                 logger.error(f"Failed to publish to MQTT: {e}")
