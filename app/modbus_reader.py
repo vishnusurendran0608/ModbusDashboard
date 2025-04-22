@@ -190,7 +190,7 @@ def publish_to_mqtt():
 def get_data():
     with data_lock:
         return device_data
-
+#MQTT thread
 def start_mqtt_thread():
     if mqtt_client_instance:
         mqtt_thread = threading.Thread(target=publish_to_mqtt, daemon=True)
