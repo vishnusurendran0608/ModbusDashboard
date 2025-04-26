@@ -9,9 +9,8 @@ from app.utils import apply_byte_order
 from datetime import datetime
 import os
 from collections import defaultdict
-
-from paho.mqtt import client as mqtt_client
 import pyodbc
+from app.cache_manager import append_to_cache, load_cache, clear_cache
 
 # Ensure logs directory exists
 os.makedirs("logs", exist_ok=True)
@@ -40,25 +39,13 @@ polling_locks = defaultdict(threading.Lock)
 
 def poll_device(device):
     ip = device['ip_address']
-    port = int(device.get('port', 502))
+    port = int(device.get('port', 1502))
     unit_id = int(device['slave_id'])
     swap_bytes = device.get('byte_swap', 'none')
     device_key = f"{ip}_{unit_id}"
 
     with polling_locks[ip]:
         client = ModbusTcpClient(ip, port=port)
-        import socket
-        # Try to get the IP address used by this connection
-        try:
-           s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-           s.connect((ip, port))
-           local_ip = s.getsockname()[0]
-           s.close()
-           logger.info(f"Using local IP {local_ip} to connect to {ip}:{port}")
-        except Exception as e:
-           logger.warning(f"Unable to determine local IP: {e}")
-
-
         if not client.connect():
             logger.warning(f"Unable to connect to IP: {ip}, ID: {unit_id}")
             return
@@ -77,10 +64,10 @@ def poll_device(device):
             # Determine function code and base address
             if 30000 <= start_address < 40000:
                 fc = 3
-                base = 0
+                base = 30000
             elif 40000 <= start_address < 50000:
                 fc = 3
-                base = 0
+                base = 40000
             else:
                 logger.warning(f"Unsupported address range at {start_address}, skipping")
                 i += 1
@@ -102,15 +89,10 @@ def poll_device(device):
                     break
 
             end_address = start_address + total_regs - 1
-            logger.info(f"Reading from Device IP: {ip}, ID: {unit_id}, Function Code: {fc}, Address Block: {start_address} to {end_address}")
+            logger.info(f"Reading from Device IP: {ip}, ID: {unit_id}, Address Block: {start_address} to {end_address}")
 
-            # Perform correct read based on function code
-            if fc == 3:
-                result = client.read_holding_registers(address=start_address_mod, count=total_regs, slave=unit_id)
-            elif fc == 4:
-                result = client.read_input_registers(address=start_address_mod, count=total_regs, slave=unit_id)
-            else:
-                result = None
+            # Perform correct read
+            result = client.read_holding_registers(address=start_address_mod, count=total_regs, slave=unit_id)
 
             if result and not result.isError():
                 for reg in block:
@@ -128,13 +110,17 @@ def poll_device(device):
                             value = value / gain
 
                         with data_lock:
-                            device_data[device_key].append({
-                                "address": addr,
+                            entry = {
+                                "timestamp": datetime.now().isoformat(),
+                                "device_key": device_key,
                                 "variable_name": variable,
+                                "address": addr,
                                 "value": value,
                                 "unit": reg.get("unit", ""),
                                 "device_name": device["device_type"]
-                            })
+                            }
+                            device_data[device_key].append(entry)
+                            append_to_cache(entry)
 
                         logger.info(f"Read {variable} = {value} from IP: {ip}, ID: {unit_id}, Address: {addr}")
                     except Exception as e:
@@ -173,23 +159,12 @@ def log_to_sql():
     )
 
     while True:
-        rows = []
-        timestamp = datetime.now().isoformat()
-
-        with data_lock:
-            for device_key, entries in device_data.items():
-                for entry in entries:
-                    rows.append((
-                        timestamp,
-                        device_key,
-                        entry["variable_name"],
-                        entry["address"],
-                        entry["value"],
-                        entry["unit"],
-                        entry["device_name"]
-                    ))
-
         try:
+            rows = load_cache()
+            if not rows:
+                time.sleep(10)
+                continue
+
             conn = pyodbc.connect(conn_str)
             cursor = conn.cursor()
 
@@ -199,20 +174,35 @@ def log_to_sql():
                 VALUES (?, ?, ?, ?, ?, ?, ?)
             """
 
-            cursor.executemany(insert_sql, rows)
+            insert_data = [
+                (
+                    row["timestamp"],
+                    row["device_key"],
+                    row["variable_name"],
+                    row["address"],
+                    row["value"],
+                    row["unit"],
+                    row["device_name"]
+                )
+                for row in rows
+            ]
+
+            cursor.executemany(insert_sql, insert_data)
             conn.commit()
             conn.close()
 
+            clear_cache()
             logger.info(f"[SQL] Inserted {len(rows)} records into PowerPulse_LiveData.")
+
         except Exception as e:
-            logger.error(f"[SQL] Failed to insert data: {e}")
+            logger.error(f"[SQL] Failed to upload to cloud: {e}")
 
         time.sleep(10)
 
 def get_data():
     with data_lock:
         return device_data
-    
+
 def start_sql_thread():
     sql_thread = threading.Thread(target=log_to_sql, daemon=True)
     sql_thread.start()

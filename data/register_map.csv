@@ -1,17 +1,9 @@
 ﻿device_type_id,device_type,variable_name,access,type,unit,gain,address,quantity
-1,Smart Logger,total-voltage-battery-end-positive,RW,U16,N/A,1,40002,1
-1,Smart Logger,charge-discharge-current-positive,RW,I16,N/A,1,40004,1
-1,Smart Logger,SOC,RW,U16,%,1,40006,1
-1,Smart Logger,SOH,RO,U16,%,1,40007,1
-1,Smart Logger,system-status,RO,U16,N/A,1,40008,1
-1,Smart Logger,pcs-on-off,RO,U16,N/A,1,40009,1
-1,Smart Logger,alarm-status,RO,U16,N/A,1,40010,1
-1,Smart Logger,working-mode,RO,U16,N/A,1,40018,1
-1,Smart Logger,active-power,RO,I16,KVA,1,40019,1
-1,Smart Logger,reactive-power,RO,I16,KVA,1,40020,1
-1,Smart Logger,bmu-fw-version,RO,U16,N/A,1,40258,1
-1,Smart Logger,air-conditioner-onoff,RO,U16,N/A,1,41370,1
-1,Smart Logger,alarm,RO,U16,N/A,1,41375,1
-1,Smart Logger,total-active-power,RO,U16,N/A,1,41559,1
-1,Smart Logger,total-load-active-power,RO,I16,mins,1,41585,1
-1,Smart Logger,m.#1-pv-power-1,RO,U16,N/A,1,41800,1
+1,Smart Logger,Date&Time,RW,U16,N/A,10,40000,1
+1,Smart Logger,City,RW,U32,N/A,1,40001,2
+1,Smart Logger,Daylight Saving Time (DST),RW,U16,N/A,1,40003,1
+1,Smart Logger,Time Zone,RO,I32,S,100,40004,2
+1,Smart Logger,DST state,RO,U16,N/A,1,40006,1
+1,Smart Logger,Next Block Test,RO,U16,N/A,1,40145,1
+2,Inverter,Test1,RW,U16,N/A,10,40000,1
+2,Inverter,Test2,RW,U32,N/A,1,40001,2
