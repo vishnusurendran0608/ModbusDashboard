@@ -11,7 +11,7 @@ import os
 from collections import defaultdict
 
 from paho.mqtt import client as mqtt_client
-
+import pyodbc
 
 # Ensure logs directory exists
 os.makedirs("logs", exist_ok=True)
@@ -160,46 +160,60 @@ def poll_devices():
 
         time.sleep(settings.get("poll_interval", 5))
 
+def log_to_sql():
+    conn_str = (
+        "DRIVER={ODBC Driver 17 for SQL Server};"
+        "SERVER=rebotdevcds.database.windows.net;"
+        "DATABASE=windindexT;"
+        "UID=sqlAdmin;"
+        "PWD=Reb0t@2023;"
+        "Encrypt=yes;"
+        "TrustServerCertificate=no;"
+        "Connection Timeout=30;"
+    )
 
-
-mqtt_config = settings.get("mqtt", {})
-mqtt_client_instance = None
-
-if mqtt_config.get("enabled", False):
-    mqtt_client_instance = mqtt_client.Client()
-    try:
-        mqtt_client_instance.connect(mqtt_config["broker"], mqtt_config.get("port", 1883))
-        logger.info(f"Connected to MQTT broker at {mqtt_config['broker']}:{mqtt_config.get('port', 1883)}")
-    except Exception as e:
-        logger.error(f"MQTT connection failed: {e}")
-        mqtt_client_instance = None
-
-
-def publish_to_mqtt():
     while True:
-        if mqtt_client_instance:
-            try:
-                with data_lock:
-                    payload = json.dumps(device_data, default=str)
-                    mqtt_client_instance.publish(
-                    mqtt_config.get("topic", "renewablebot/modbus"),
-                    payload,
-                    qos=1,
-                    retain=True
-                    )
-                logger.info(f"Published data to MQTT topic {mqtt_config.get('topic')}")
-            except Exception as e:
-                logger.error(f"Failed to publish to MQTT: {e}")
-        time.sleep(mqtt_config.get("publish_interval", 10))
+        rows = []
+        timestamp = datetime.now().isoformat()
+
+        with data_lock:
+            for device_key, entries in device_data.items():
+                for entry in entries:
+                    rows.append((
+                        timestamp,
+                        device_key,
+                        entry["variable_name"],
+                        entry["address"],
+                        entry["value"],
+                        entry["unit"],
+                        entry["device_name"]
+                    ))
+
+        try:
+            conn = pyodbc.connect(conn_str)
+            cursor = conn.cursor()
+
+            insert_sql = """
+                INSERT INTO [dbo].[PowerPulse_LiveData]
+                (timestamp, device_key, variable_name, address, value, unit, device_name)
+                VALUES (?, ?, ?, ?, ?, ?, ?)
+            """
+
+            cursor.executemany(insert_sql, rows)
+            conn.commit()
+            conn.close()
+
+            logger.info(f"[SQL] Inserted {len(rows)} records into PowerPulse_LiveData.")
+        except Exception as e:
+            logger.error(f"[SQL] Failed to insert data: {e}")
+
+        time.sleep(10)
 
 def get_data():
     with data_lock:
         return device_data
-#MQTT thread
-def start_mqtt_thread():
-    if mqtt_client_instance:
-        mqtt_thread = threading.Thread(target=publish_to_mqtt, daemon=True)
-        mqtt_thread.start()
-        logger.info("Started MQTT publishing thread")
-    else:
-        logger.warning("MQTT is disabled or not connected. Skipping MQTT thread.")
+    
+def start_sql_thread():
+    sql_thread = threading.Thread(target=log_to_sql, daemon=True)
+    sql_thread.start()
+    logger.info("Started SQL database logging thread.")

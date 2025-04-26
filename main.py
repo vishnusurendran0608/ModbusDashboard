@@ -1,5 +1,5 @@
 import threading
-from app.modbus_reader import poll_devices, start_mqtt_thread
+from app.modbus_reader import poll_devices, start_sql_thread
 from app.flask_server import create_app
 import logging
 import os
@@ -12,8 +12,8 @@ logging.basicConfig(level=logging.INFO)
 poll_thread = threading.Thread(target=poll_devices, daemon=True)
 poll_thread.start()
 
-# Start MQTT publishing thread separately
-start_mqtt_thread()
+# Start SQL publishing thread separately
+start_sql_thread()
 
 # Start Flask in the main thread
 if __name__ == "__main__":

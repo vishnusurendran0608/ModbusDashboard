@@ -10,6 +10,16 @@
       "port": 1883,
       "topic": "renewablebot/modbus",
       "publish_interval": 10
-    }
+    },
+
+    "sql": {
+    "enabled": true,
+    "driver": "ODBC Driver 17 for SQL Server",
+    "server": "rebotdevcds.database.windows.net",
+    "database": "windindexT",
+    "uid": "sqlAdmin",
+    "pwd": "Reb0t@2023",
+    "table": "[dbo].[PowerPulse_LiveData]"
+  }
   }
   

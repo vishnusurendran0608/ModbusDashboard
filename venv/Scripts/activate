@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\vishn\Downloads\ModbusDashboard\venv"
+VIRTUAL_ENV="C:\VISHNU\SOFTWARES\FiverrProjects\ModbusDashboard\Site2\ModbusDashboard_Site2\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
