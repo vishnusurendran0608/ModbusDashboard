@@ -9,11 +9,6 @@ from app.utils import apply_byte_order
 from datetime import datetime
 import os
 from collections import defaultdict
-<<<<<<< HEAD
-import pyodbc
-from app.cache_manager import append_to_cache, load_cache, clear_cache
-=======
->>>>>>> 4c30550 (AWS MQTT Added)
 
 # Ensure logs directory exists
 os.makedirs("logs", exist_ok=True)
@@ -149,70 +144,6 @@ def poll_devices():
 
         time.sleep(settings.get("poll_interval", 5))
 
-<<<<<<< HEAD
-def log_to_sql():
-    conn_str = (
-        "DRIVER={ODBC Driver 17 for SQL Server};"
-        "SERVER=rebotdevcds.database.windows.net;"
-        "DATABASE=windindexT;"
-        "UID=sqlAdmin;"
-        "PWD=Reb0t@2023;"
-        "Encrypt=yes;"
-        "TrustServerCertificate=no;"
-        "Connection Timeout=30;"
-    )
-
-    while True:
-        try:
-            rows = load_cache()
-            if not rows:
-                time.sleep(10)
-                continue
-
-            conn = pyodbc.connect(conn_str)
-            cursor = conn.cursor()
-
-            insert_sql = """
-                INSERT INTO [dbo].[PowerPulse_LiveData]
-                (timestamp, device_key, variable_name, address, value, unit, device_name)
-                VALUES (?, ?, ?, ?, ?, ?, ?)
-            """
-
-            insert_data = [
-                (
-                    row["timestamp"],
-                    row["device_key"],
-                    row["variable_name"],
-                    row["address"],
-                    row["value"],
-                    row["unit"],
-                    row["device_name"]
-                )
-                for row in rows
-            ]
-
-            cursor.executemany(insert_sql, insert_data)
-            conn.commit()
-            conn.close()
-
-            clear_cache()
-            logger.info(f"[SQL] Inserted {len(rows)} records into PowerPulse_LiveData.")
-
-        except Exception as e:
-            logger.error(f"[SQL] Failed to upload to cloud: {e}")
-
-        time.sleep(10)
-
 def get_data():
     with data_lock:
         return device_data
-
-def start_sql_thread():
-    sql_thread = threading.Thread(target=log_to_sql, daemon=True)
-    sql_thread.start()
-    logger.info("Started SQL database logging thread.")
-=======
-def get_data():
-    with data_lock:
-        return device_data
->>>>>>> 4c30550 (AWS MQTT Added)
