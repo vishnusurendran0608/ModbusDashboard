@@ -8,7 +8,11 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
+<<<<<<< HEAD
 set VIRTUAL_ENV=C:\VISHNU\SOFTWARES\FiverrProjects\ModbusDashboard\Site2\ModbusDashboard_Site2\venv
+=======
+set VIRTUAL_ENV=C:\VISHNU\SOFTWARES\FiverrProjects\ModbusDashboard\Site1 Follian Ireland\Deployed\ModbusDashboard\venv
+>>>>>>> 4c30550 (AWS MQTT Added)
 
 if not defined PROMPT set PROMPT=$P$G
 

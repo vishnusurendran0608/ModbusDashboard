@@ -9,8 +9,11 @@ from app.utils import apply_byte_order
 from datetime import datetime
 import os
 from collections import defaultdict
+<<<<<<< HEAD
 import pyodbc
 from app.cache_manager import append_to_cache, load_cache, clear_cache
+=======
+>>>>>>> 4c30550 (AWS MQTT Added)
 
 # Ensure logs directory exists
 os.makedirs("logs", exist_ok=True)
@@ -146,6 +149,7 @@ def poll_devices():
 
         time.sleep(settings.get("poll_interval", 5))
 
+<<<<<<< HEAD
 def log_to_sql():
     conn_str = (
         "DRIVER={ODBC Driver 17 for SQL Server};"
@@ -207,3 +211,8 @@ def start_sql_thread():
     sql_thread = threading.Thread(target=log_to_sql, daemon=True)
     sql_thread.start()
     logger.info("Started SQL database logging thread.")
+=======
+def get_data():
+    with data_lock:
+        return device_data
+>>>>>>> 4c30550 (AWS MQTT Added)

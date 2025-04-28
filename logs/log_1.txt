@@ -17134,6 +17134,7 @@
 2025-04-22 14:25:16,227 [WARNING] Unable to connect to IP: 192.168.0.10, ID: 13
 2025-04-22 14:25:16,228 [INFO] Using local IP 172.20.10.3 to connect to 192.168.0.10:502
 2025-04-22 14:25:17,079 [INFO] Published data to MQTT topic renewablebot/modbus
+<<<<<<< HEAD
 2025-04-26 11:12:24,751 [INFO] Started SQL database logging thread.
 2025-04-26 11:12:24,751 [INFO] Using local IP 172.20.10.3 to connect to 192.168.0.232:502
 2025-04-26 11:12:26,184 [ERROR] [SQL] Failed to insert data: ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open server 'rebotdevcds' requested by the login. Client with IP address '171.76.210.173' is not allowed to access the server.  To enable access, use the Azure Management Portal or run sp_set_firewall_rule on the master database to create a firewall rule for this IP address or address range.  It may take up to five minutes for this change to take effect. (40615) (SQLDriverConnect); [42000] [Microsoft][ODBC Driver 17 for SQL Server]Invalid connection string attribute (0); [42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open server 'rebotdevcds' requested by the login. Client with IP address '171.76.210.173' is not allowed to access the server.  To enable access, use the Azure Management Portal or run sp_set_firewall_rule on the master database to create a firewall rule for this IP address or address range.  It may take up to five minutes for this change to take effect. (40615); [42000] [Microsoft][ODBC Driver 17 for SQL Server]Invalid connection string attribute (0)")
@@ -22084,3 +22085,818 @@
 2025-04-26 17:17:38,586 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
 2025-04-26 17:17:43,019 [ERROR] [SQL] Failed to upload to cloud: ('42S22', "[42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'timestamp'. (207) (SQLExecDirectW); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'device_key'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'variable_name'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'address'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'value'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'unit'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'device_name'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Statement(s) could not be prepared. (8180)")
 2025-04-26 17:17:43,019 [ERROR] [SQL] Failed to upload to cloud: ('42S22', "[42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'timestamp'. (207) (SQLExecDirectW); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'device_key'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'variable_name'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'address'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'value'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'unit'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'device_name'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Statement(s) could not be prepared. (8180)")
+=======
+2025-04-28 21:22:48,141 [ERROR] MQTT (AWS IoT) connection failed: [Errno 2] No such file or directory: 'rbpiccr-001-certificate.pem.crt'
+2025-04-28 21:22:48,144 [WARNING] MQTT client not connected. Skipping publish.
+2025-04-28 21:22:48,145 [INFO] Using local IP 127.0.0.1 to connect to 127.0.0.1:1502
+2025-04-28 21:22:48,145 [INFO] Using local IP 192.168.29.71 to connect to 192.168.29.71:1502
+2025-04-28 21:22:48,150 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-28 21:22:48,150 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-28 21:22:48,150 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-28 21:22:48,151 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-28 21:22:48,153 [WARNING] Failed to read registers at block starting 40000 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:22:48,153 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-28 21:22:48,154 [WARNING] Failed to read registers at block starting 40145 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:22:48,154 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-28 21:22:48,186 [WARNING] Failed to read registers at block starting 40000 from IP: 192.168.29.71, ID: 1
+2025-04-28 21:22:48,186 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-28 21:22:53,194 [INFO] Using local IP 192.168.29.71 to connect to 192.168.29.71:1502
+2025-04-28 21:22:53,195 [INFO] Using local IP 127.0.0.1 to connect to 127.0.0.1:1502
+2025-04-28 21:22:53,196 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-28 21:22:53,198 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-28 21:22:53,198 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-28 21:22:53,198 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-28 21:22:53,200 [WARNING] Failed to read registers at block starting 40000 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:22:53,200 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-28 21:22:53,202 [WARNING] Failed to read registers at block starting 40145 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:22:53,203 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-28 21:22:53,224 [WARNING] Failed to read registers at block starting 40000 from IP: 192.168.29.71, ID: 1
+2025-04-28 21:22:53,224 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-28 21:22:58,146 [WARNING] MQTT client not connected. Skipping publish.
+2025-04-28 21:22:58,242 [INFO] Using local IP 127.0.0.1 to connect to 127.0.0.1:1502
+2025-04-28 21:22:58,243 [INFO] Using local IP 192.168.29.71 to connect to 192.168.29.71:1502
+2025-04-28 21:22:58,243 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-28 21:22:58,245 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-28 21:22:58,245 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-28 21:22:58,245 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-28 21:22:58,247 [WARNING] Failed to read registers at block starting 40000 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:22:58,247 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-28 21:22:58,248 [WARNING] Failed to read registers at block starting 40145 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:22:58,248 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-28 21:22:58,273 [WARNING] Failed to read registers at block starting 40000 from IP: 192.168.29.71, ID: 1
+2025-04-28 21:22:58,274 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-28 21:23:03,283 [INFO] Using local IP 127.0.0.1 to connect to 127.0.0.1:1502
+2025-04-28 21:23:03,284 [INFO] Using local IP 192.168.29.71 to connect to 192.168.29.71:1502
+2025-04-28 21:23:03,285 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-28 21:23:03,287 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-28 21:23:03,287 [WARNING] Failed to read registers at block starting 40000 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:23:03,288 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-28 21:23:03,288 [WARNING] Failed to read registers at block starting 40145 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:23:03,289 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-28 21:23:03,298 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-28 21:23:03,299 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-28 21:23:03,313 [WARNING] Failed to read registers at block starting 40000 from IP: 192.168.29.71, ID: 1
+2025-04-28 21:23:03,315 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-28 21:23:08,151 [WARNING] MQTT client not connected. Skipping publish.
+2025-04-28 21:23:08,323 [INFO] Using local IP 127.0.0.1 to connect to 127.0.0.1:1502
+2025-04-28 21:23:08,323 [INFO] Using local IP 192.168.29.71 to connect to 192.168.29.71:1502
+2025-04-28 21:23:08,325 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-28 21:23:08,325 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-28 21:23:08,336 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-28 21:23:08,338 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-28 21:23:08,339 [WARNING] Failed to read registers at block starting 40000 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:23:08,340 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-28 21:23:08,341 [WARNING] Failed to read registers at block starting 40145 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:23:08,342 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-28 21:23:08,352 [WARNING] Failed to read registers at block starting 40000 from IP: 192.168.29.71, ID: 1
+2025-04-28 21:23:08,353 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-28 21:23:13,355 [INFO] Using local IP 127.0.0.1 to connect to 127.0.0.1:1502
+2025-04-28 21:23:13,355 [INFO] Using local IP 192.168.29.71 to connect to 192.168.29.71:1502
+2025-04-28 21:23:13,356 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-28 21:23:13,356 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-28 21:23:13,356 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-28 21:23:13,356 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-28 21:23:13,357 [WARNING] Failed to read registers at block starting 40000 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:23:13,357 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-28 21:23:13,357 [WARNING] Failed to read registers at block starting 40145 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:23:13,357 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-28 21:23:13,385 [WARNING] Failed to read registers at block starting 40000 from IP: 192.168.29.71, ID: 1
+2025-04-28 21:23:13,387 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-28 21:23:18,152 [WARNING] MQTT client not connected. Skipping publish.
+2025-04-28 21:23:18,403 [INFO] Using local IP 127.0.0.1 to connect to 127.0.0.1:1502
+2025-04-28 21:23:18,403 [INFO] Using local IP 192.168.29.71 to connect to 192.168.29.71:1502
+2025-04-28 21:23:18,404 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-28 21:23:18,405 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-28 21:23:18,406 [WARNING] Failed to read registers at block starting 40000 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:23:18,407 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-28 21:23:18,408 [WARNING] Failed to read registers at block starting 40145 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:23:18,408 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-28 21:23:18,417 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-28 21:23:18,418 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-28 21:23:18,433 [WARNING] Failed to read registers at block starting 40000 from IP: 192.168.29.71, ID: 1
+2025-04-28 21:23:18,433 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-28 21:23:23,439 [INFO] Using local IP 127.0.0.1 to connect to 127.0.0.1:1502
+2025-04-28 21:23:23,439 [INFO] Using local IP 192.168.29.71 to connect to 192.168.29.71:1502
+2025-04-28 21:23:23,440 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-28 21:23:23,441 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-28 21:23:23,453 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-28 21:23:23,453 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-28 21:23:23,454 [WARNING] Failed to read registers at block starting 40000 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:23:23,455 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-28 21:23:23,455 [WARNING] Failed to read registers at block starting 40145 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:23:23,456 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-28 21:23:23,469 [WARNING] Failed to read registers at block starting 40000 from IP: 192.168.29.71, ID: 1
+2025-04-28 21:23:23,470 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-28 21:23:28,162 [WARNING] MQTT client not connected. Skipping publish.
+2025-04-28 21:23:28,474 [INFO] Using local IP 127.0.0.1 to connect to 127.0.0.1:1502
+2025-04-28 21:23:28,475 [INFO] Using local IP 192.168.29.71 to connect to 192.168.29.71:1502
+2025-04-28 21:23:28,475 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-28 21:23:28,475 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-28 21:23:28,477 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-28 21:23:28,477 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-28 21:23:28,477 [WARNING] Failed to read registers at block starting 40000 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:23:28,477 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-28 21:23:28,478 [WARNING] Failed to read registers at block starting 40145 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:23:28,478 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-28 21:23:28,504 [WARNING] Failed to read registers at block starting 40000 from IP: 192.168.29.71, ID: 1
+2025-04-28 21:23:28,504 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-28 21:23:33,520 [INFO] Using local IP 127.0.0.1 to connect to 127.0.0.1:1502
+2025-04-28 21:23:33,522 [INFO] Using local IP 192.168.29.71 to connect to 192.168.29.71:1502
+2025-04-28 21:23:33,524 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-28 21:23:33,525 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-28 21:23:33,548 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-28 21:23:33,548 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-28 21:23:33,550 [WARNING] Failed to read registers at block starting 40000 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:23:33,550 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-28 21:23:33,550 [WARNING] Failed to read registers at block starting 40145 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:23:33,551 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-28 21:23:33,566 [WARNING] Failed to read registers at block starting 40000 from IP: 192.168.29.71, ID: 1
+2025-04-28 21:23:33,566 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-28 21:23:38,172 [WARNING] MQTT client not connected. Skipping publish.
+2025-04-28 21:23:38,578 [INFO] Using local IP 127.0.0.1 to connect to 127.0.0.1:1502
+2025-04-28 21:23:38,579 [INFO] Using local IP 192.168.29.71 to connect to 192.168.29.71:1502
+2025-04-28 21:23:38,579 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-28 21:23:38,580 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-28 21:23:38,580 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-28 21:23:38,580 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-28 21:23:38,581 [WARNING] Failed to read registers at block starting 40000 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:23:38,582 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-28 21:23:38,583 [WARNING] Failed to read registers at block starting 40145 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:23:38,584 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-28 21:23:38,608 [WARNING] Failed to read registers at block starting 40000 from IP: 192.168.29.71, ID: 1
+2025-04-28 21:23:38,609 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-28 21:23:43,623 [INFO] Using local IP 127.0.0.1 to connect to 127.0.0.1:1502
+2025-04-28 21:23:43,623 [INFO] Using local IP 192.168.29.71 to connect to 192.168.29.71:1502
+2025-04-28 21:23:43,625 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-28 21:23:43,625 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-28 21:23:43,636 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-28 21:23:43,637 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-28 21:23:43,638 [WARNING] Failed to read registers at block starting 40000 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:23:43,639 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-28 21:23:43,640 [WARNING] Failed to read registers at block starting 40145 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:23:43,641 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-28 21:23:43,652 [WARNING] Failed to read registers at block starting 40000 from IP: 192.168.29.71, ID: 1
+2025-04-28 21:23:43,653 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-28 21:23:48,179 [WARNING] MQTT client not connected. Skipping publish.
+2025-04-28 21:23:48,665 [INFO] Using local IP 127.0.0.1 to connect to 127.0.0.1:1502
+2025-04-28 21:23:48,665 [INFO] Using local IP 192.168.29.71 to connect to 192.168.29.71:1502
+2025-04-28 21:23:48,665 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-28 21:23:48,666 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-28 21:23:48,666 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-28 21:23:48,666 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-28 21:23:48,667 [WARNING] Failed to read registers at block starting 40000 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:23:48,667 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-28 21:23:48,667 [WARNING] Failed to read registers at block starting 40145 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:23:48,667 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-28 21:23:48,695 [WARNING] Failed to read registers at block starting 40000 from IP: 192.168.29.71, ID: 1
+2025-04-28 21:23:48,697 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-28 21:23:53,699 [INFO] Using local IP 127.0.0.1 to connect to 127.0.0.1:1502
+2025-04-28 21:23:53,699 [INFO] Using local IP 192.168.29.71 to connect to 192.168.29.71:1502
+2025-04-28 21:23:53,700 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-28 21:23:53,700 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-28 21:23:53,714 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-28 21:23:53,715 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-28 21:23:53,716 [WARNING] Failed to read registers at block starting 40000 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:23:53,716 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-28 21:23:53,717 [WARNING] Failed to read registers at block starting 40145 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:23:53,718 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-28 21:23:53,730 [WARNING] Failed to read registers at block starting 40000 from IP: 192.168.29.71, ID: 1
+2025-04-28 21:23:53,731 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-28 21:23:58,184 [WARNING] MQTT client not connected. Skipping publish.
+2025-04-28 21:23:58,733 [INFO] Using local IP 127.0.0.1 to connect to 127.0.0.1:1502
+2025-04-28 21:23:58,735 [INFO] Using local IP 192.168.29.71 to connect to 192.168.29.71:1502
+2025-04-28 21:23:58,735 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-28 21:23:58,735 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-28 21:23:58,736 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-28 21:23:58,736 [WARNING] Failed to read registers at block starting 40000 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:23:58,736 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-28 21:23:58,737 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-28 21:23:58,737 [WARNING] Failed to read registers at block starting 40145 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:23:58,739 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-28 21:23:58,763 [WARNING] Failed to read registers at block starting 40000 from IP: 192.168.29.71, ID: 1
+2025-04-28 21:23:58,764 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-28 21:24:03,778 [INFO] Using local IP 127.0.0.1 to connect to 127.0.0.1:1502
+2025-04-28 21:24:03,779 [INFO] Using local IP 192.168.29.71 to connect to 192.168.29.71:1502
+2025-04-28 21:24:03,780 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-28 21:24:03,781 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-28 21:24:03,781 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-28 21:24:03,781 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-28 21:24:03,782 [WARNING] Failed to read registers at block starting 40000 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:24:03,783 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-28 21:24:03,784 [WARNING] Failed to read registers at block starting 40145 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:24:03,785 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-28 21:24:03,807 [WARNING] Failed to read registers at block starting 40000 from IP: 192.168.29.71, ID: 1
+2025-04-28 21:24:03,808 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-28 21:24:08,186 [WARNING] MQTT client not connected. Skipping publish.
+2025-04-28 21:24:08,814 [INFO] Using local IP 127.0.0.1 to connect to 127.0.0.1:1502
+2025-04-28 21:24:08,814 [INFO] Using local IP 192.168.29.71 to connect to 192.168.29.71:1502
+2025-04-28 21:24:08,815 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-28 21:24:08,815 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-28 21:24:08,815 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-28 21:24:08,816 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-28 21:24:08,816 [WARNING] Failed to read registers at block starting 40000 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:24:08,817 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-28 21:24:08,817 [WARNING] Failed to read registers at block starting 40145 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:24:08,817 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-28 21:24:08,844 [WARNING] Failed to read registers at block starting 40000 from IP: 192.168.29.71, ID: 1
+2025-04-28 21:24:08,845 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-28 21:24:13,848 [INFO] Using local IP 127.0.0.1 to connect to 127.0.0.1:1502
+2025-04-28 21:24:13,849 [INFO] Using local IP 192.168.29.71 to connect to 192.168.29.71:1502
+2025-04-28 21:24:13,850 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-28 21:24:13,850 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-28 21:24:13,850 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-28 21:24:13,851 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-28 21:24:13,853 [WARNING] Failed to read registers at block starting 40000 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:24:13,853 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-28 21:24:13,854 [WARNING] Failed to read registers at block starting 40145 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:24:13,855 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-28 21:24:13,878 [WARNING] Failed to read registers at block starting 40000 from IP: 192.168.29.71, ID: 1
+2025-04-28 21:24:13,879 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-28 21:24:18,197 [WARNING] MQTT client not connected. Skipping publish.
+2025-04-28 21:24:18,897 [INFO] Using local IP 127.0.0.1 to connect to 127.0.0.1:1502
+2025-04-28 21:24:18,897 [INFO] Using local IP 192.168.29.71 to connect to 192.168.29.71:1502
+2025-04-28 21:24:18,898 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-28 21:24:18,898 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-28 21:24:18,899 [WARNING] Failed to read registers at block starting 40000 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:24:18,899 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-28 21:24:18,900 [WARNING] Failed to read registers at block starting 40145 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:24:18,900 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-28 21:24:18,911 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-28 21:24:18,911 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-28 21:24:18,926 [WARNING] Failed to read registers at block starting 40000 from IP: 192.168.29.71, ID: 1
+2025-04-28 21:24:18,927 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-28 21:24:23,940 [INFO] Using local IP 127.0.0.1 to connect to 127.0.0.1:1502
+2025-04-28 21:24:23,941 [INFO] Using local IP 192.168.29.71 to connect to 192.168.29.71:1502
+2025-04-28 21:24:23,942 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-28 21:24:23,943 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-28 21:24:23,944 [WARNING] Failed to read registers at block starting 40000 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:24:23,945 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-28 21:24:23,947 [WARNING] Failed to read registers at block starting 40145 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:24:23,947 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-28 21:24:23,955 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-28 21:24:23,956 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-28 21:24:23,971 [WARNING] Failed to read registers at block starting 40000 from IP: 192.168.29.71, ID: 1
+2025-04-28 21:24:23,973 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-28 21:24:28,209 [WARNING] MQTT client not connected. Skipping publish.
+2025-04-28 21:24:28,990 [INFO] Using local IP 127.0.0.1 to connect to 127.0.0.1:1502
+2025-04-28 21:24:28,991 [INFO] Using local IP 192.168.29.71 to connect to 192.168.29.71:1502
+2025-04-28 21:24:28,993 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-28 21:24:28,993 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-28 21:24:28,994 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-28 21:24:28,994 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-28 21:24:28,996 [WARNING] Failed to read registers at block starting 40000 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:24:28,996 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-28 21:24:28,997 [WARNING] Failed to read registers at block starting 40145 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:24:28,997 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-28 21:24:29,020 [WARNING] Failed to read registers at block starting 40000 from IP: 192.168.29.71, ID: 1
+2025-04-28 21:24:29,021 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-28 21:24:34,024 [INFO] Using local IP 127.0.0.1 to connect to 127.0.0.1:1502
+2025-04-28 21:24:34,025 [INFO] Using local IP 192.168.29.71 to connect to 192.168.29.71:1502
+2025-04-28 21:24:34,026 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-28 21:24:34,026 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-28 21:24:34,027 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-28 21:24:34,028 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-28 21:24:34,028 [WARNING] Failed to read registers at block starting 40000 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:24:34,029 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-28 21:24:34,030 [WARNING] Failed to read registers at block starting 40145 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:24:34,030 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-28 21:24:34,054 [WARNING] Failed to read registers at block starting 40000 from IP: 192.168.29.71, ID: 1
+2025-04-28 21:24:34,054 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-28 21:24:38,217 [WARNING] MQTT client not connected. Skipping publish.
+2025-04-28 21:24:39,063 [INFO] Using local IP 127.0.0.1 to connect to 127.0.0.1:1502
+2025-04-28 21:24:39,064 [INFO] Using local IP 192.168.29.71 to connect to 192.168.29.71:1502
+2025-04-28 21:24:39,064 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-28 21:24:39,064 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-28 21:24:39,064 [WARNING] Failed to read registers at block starting 40000 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:24:39,066 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-28 21:24:39,066 [WARNING] Failed to read registers at block starting 40145 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:24:39,066 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-28 21:24:39,078 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-28 21:24:39,078 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-28 21:24:39,094 [WARNING] Failed to read registers at block starting 40000 from IP: 192.168.29.71, ID: 1
+2025-04-28 21:24:39,095 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-28 21:24:44,112 [INFO] Using local IP 127.0.0.1 to connect to 127.0.0.1:1502
+2025-04-28 21:24:44,113 [INFO] Using local IP 192.168.29.71 to connect to 192.168.29.71:1502
+2025-04-28 21:24:44,114 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-28 21:24:44,115 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-28 21:24:44,126 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-28 21:24:44,127 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-28 21:24:44,128 [WARNING] Failed to read registers at block starting 40000 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:24:44,130 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-28 21:24:44,130 [WARNING] Failed to read registers at block starting 40145 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:24:44,131 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-28 21:24:44,142 [WARNING] Failed to read registers at block starting 40000 from IP: 192.168.29.71, ID: 1
+2025-04-28 21:24:44,142 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-28 21:24:48,220 [WARNING] MQTT client not connected. Skipping publish.
+2025-04-28 21:24:49,155 [INFO] Using local IP 192.168.29.71 to connect to 192.168.29.71:1502
+2025-04-28 21:24:49,155 [INFO] Using local IP 127.0.0.1 to connect to 127.0.0.1:1502
+2025-04-28 21:24:49,156 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-28 21:24:49,157 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-28 21:24:49,158 [WARNING] Failed to read registers at block starting 40000 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:24:49,158 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-28 21:24:49,159 [WARNING] Failed to read registers at block starting 40145 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:24:49,161 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-28 21:24:49,169 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-28 21:24:49,169 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-28 21:24:49,184 [WARNING] Failed to read registers at block starting 40000 from IP: 192.168.29.71, ID: 1
+2025-04-28 21:24:49,184 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-28 21:24:54,200 [INFO] Using local IP 127.0.0.1 to connect to 127.0.0.1:1502
+2025-04-28 21:24:54,201 [INFO] Using local IP 192.168.29.71 to connect to 192.168.29.71:1502
+2025-04-28 21:24:54,214 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-28 21:24:54,214 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-28 21:24:54,215 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-28 21:24:54,215 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-28 21:24:54,217 [WARNING] Failed to read registers at block starting 40000 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:24:54,217 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-28 21:24:54,218 [WARNING] Failed to read registers at block starting 40145 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:24:54,219 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-28 21:24:54,229 [WARNING] Failed to read registers at block starting 40000 from IP: 192.168.29.71, ID: 1
+2025-04-28 21:24:54,229 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-28 21:24:58,225 [WARNING] MQTT client not connected. Skipping publish.
+2025-04-28 21:24:59,246 [INFO] Using local IP 127.0.0.1 to connect to 127.0.0.1:1502
+2025-04-28 21:24:59,246 [INFO] Using local IP 192.168.29.71 to connect to 192.168.29.71:1502
+2025-04-28 21:24:59,248 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-28 21:24:59,248 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-28 21:24:59,248 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-28 21:24:59,248 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-28 21:24:59,249 [WARNING] Failed to read registers at block starting 40000 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:24:59,249 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-28 21:24:59,250 [WARNING] Failed to read registers at block starting 40145 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:24:59,250 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-28 21:24:59,276 [WARNING] Failed to read registers at block starting 40000 from IP: 192.168.29.71, ID: 1
+2025-04-28 21:24:59,277 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-28 21:25:04,285 [INFO] Using local IP 127.0.0.1 to connect to 127.0.0.1:1502
+2025-04-28 21:25:04,286 [INFO] Using local IP 192.168.29.71 to connect to 192.168.29.71:1502
+2025-04-28 21:25:04,299 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-28 21:25:04,299 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-28 21:25:04,300 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-28 21:25:04,300 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-28 21:25:04,302 [WARNING] Failed to read registers at block starting 40000 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:25:04,303 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-28 21:25:04,304 [WARNING] Failed to read registers at block starting 40145 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:25:04,305 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-28 21:25:04,314 [WARNING] Failed to read registers at block starting 40000 from IP: 192.168.29.71, ID: 1
+2025-04-28 21:25:04,316 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-28 21:25:08,228 [WARNING] MQTT client not connected. Skipping publish.
+2025-04-28 21:25:09,335 [INFO] Using local IP 127.0.0.1 to connect to 127.0.0.1:1502
+2025-04-28 21:25:09,335 [INFO] Using local IP 192.168.29.71 to connect to 192.168.29.71:1502
+2025-04-28 21:25:09,336 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-28 21:25:09,337 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-28 21:25:09,347 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-28 21:25:09,347 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-28 21:25:09,349 [WARNING] Failed to read registers at block starting 40000 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:25:09,349 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-28 21:25:09,350 [WARNING] Failed to read registers at block starting 40145 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:25:09,350 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-28 21:25:09,363 [WARNING] Failed to read registers at block starting 40000 from IP: 192.168.29.71, ID: 1
+2025-04-28 21:25:09,364 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-28 21:25:14,379 [INFO] Using local IP 127.0.0.1 to connect to 127.0.0.1:1502
+2025-04-28 21:25:14,379 [INFO] Using local IP 192.168.29.71 to connect to 192.168.29.71:1502
+2025-04-28 21:25:14,380 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-28 21:25:14,380 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-28 21:25:14,381 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-28 21:25:14,381 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-28 21:25:14,382 [WARNING] Failed to read registers at block starting 40000 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:25:14,382 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-28 21:25:14,382 [WARNING] Failed to read registers at block starting 40145 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:25:14,382 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-28 21:25:14,409 [WARNING] Failed to read registers at block starting 40000 from IP: 192.168.29.71, ID: 1
+2025-04-28 21:25:14,410 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-28 21:25:18,244 [WARNING] MQTT client not connected. Skipping publish.
+2025-04-28 21:25:19,426 [INFO] Using local IP 127.0.0.1 to connect to 127.0.0.1:1502
+2025-04-28 21:25:19,426 [INFO] Using local IP 192.168.29.71 to connect to 192.168.29.71:1502
+2025-04-28 21:25:19,427 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-28 21:25:19,429 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-28 21:25:19,441 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-28 21:25:19,441 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-28 21:25:19,442 [WARNING] Failed to read registers at block starting 40000 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:25:19,442 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-28 21:25:19,443 [WARNING] Failed to read registers at block starting 40145 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:25:19,443 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-28 21:25:19,457 [WARNING] Failed to read registers at block starting 40000 from IP: 192.168.29.71, ID: 1
+2025-04-28 21:25:19,458 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-28 21:25:24,472 [INFO] Using local IP 127.0.0.1 to connect to 127.0.0.1:1502
+2025-04-28 21:25:24,472 [INFO] Using local IP 192.168.29.71 to connect to 192.168.29.71:1502
+2025-04-28 21:25:24,474 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-28 21:25:24,474 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-28 21:25:24,474 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-28 21:25:24,474 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-28 21:25:24,475 [WARNING] Failed to read registers at block starting 40000 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:25:24,475 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-28 21:25:24,476 [WARNING] Failed to read registers at block starting 40145 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:25:24,476 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-28 21:25:24,502 [WARNING] Failed to read registers at block starting 40000 from IP: 192.168.29.71, ID: 1
+2025-04-28 21:25:24,503 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-28 21:25:28,253 [WARNING] MQTT client not connected. Skipping publish.
+2025-04-28 21:25:29,508 [INFO] Using local IP 127.0.0.1 to connect to 127.0.0.1:1502
+2025-04-28 21:25:29,508 [INFO] Using local IP 192.168.29.71 to connect to 192.168.29.71:1502
+2025-04-28 21:25:29,510 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-28 21:25:29,510 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-28 21:25:29,512 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-28 21:25:29,512 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-28 21:25:29,515 [WARNING] Failed to read registers at block starting 40000 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:25:29,515 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-28 21:25:29,517 [WARNING] Failed to read registers at block starting 40145 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:25:29,517 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-28 21:25:29,538 [WARNING] Failed to read registers at block starting 40000 from IP: 192.168.29.71, ID: 1
+2025-04-28 21:25:29,539 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-28 21:25:34,547 [INFO] Using local IP 127.0.0.1 to connect to 127.0.0.1:1502
+2025-04-28 21:25:34,547 [INFO] Using local IP 192.168.29.71 to connect to 192.168.29.71:1502
+2025-04-28 21:25:34,548 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-28 21:25:34,548 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-28 21:25:34,548 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-28 21:25:34,548 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-28 21:25:34,549 [WARNING] Failed to read registers at block starting 40000 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:25:34,549 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-28 21:25:34,550 [WARNING] Failed to read registers at block starting 40145 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:25:34,550 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-28 21:25:34,577 [WARNING] Failed to read registers at block starting 40000 from IP: 192.168.29.71, ID: 1
+2025-04-28 21:25:34,577 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-28 21:25:38,265 [WARNING] MQTT client not connected. Skipping publish.
+2025-04-28 21:25:39,594 [INFO] Using local IP 127.0.0.1 to connect to 127.0.0.1:1502
+2025-04-28 21:25:39,594 [INFO] Using local IP 192.168.29.71 to connect to 192.168.29.71:1502
+2025-04-28 21:25:39,595 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-28 21:25:39,595 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-28 21:25:39,595 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-28 21:25:39,596 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-28 21:25:39,596 [WARNING] Failed to read registers at block starting 40000 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:25:39,597 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-28 21:25:39,597 [WARNING] Failed to read registers at block starting 40145 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:25:39,597 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-28 21:25:39,624 [WARNING] Failed to read registers at block starting 40000 from IP: 192.168.29.71, ID: 1
+2025-04-28 21:25:39,625 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-28 21:25:44,637 [INFO] Using local IP 127.0.0.1 to connect to 127.0.0.1:1502
+2025-04-28 21:25:44,637 [INFO] Using local IP 192.168.29.71 to connect to 192.168.29.71:1502
+2025-04-28 21:25:44,638 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-28 21:25:44,638 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-28 21:25:44,639 [WARNING] Failed to read registers at block starting 40000 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:25:44,639 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-28 21:25:44,641 [WARNING] Failed to read registers at block starting 40145 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:25:44,642 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-28 21:25:44,652 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-28 21:25:44,652 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-28 21:25:44,668 [WARNING] Failed to read registers at block starting 40000 from IP: 192.168.29.71, ID: 1
+2025-04-28 21:25:44,669 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-28 21:25:48,276 [WARNING] MQTT client not connected. Skipping publish.
+2025-04-28 21:25:49,683 [INFO] Using local IP 127.0.0.1 to connect to 127.0.0.1:1502
+2025-04-28 21:25:49,684 [INFO] Using local IP 192.168.29.71 to connect to 192.168.29.71:1502
+2025-04-28 21:25:49,684 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-28 21:25:49,685 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-28 21:25:49,685 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-28 21:25:49,687 [WARNING] Failed to read registers at block starting 40000 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:25:49,688 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-28 21:25:49,688 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-28 21:25:49,689 [WARNING] Failed to read registers at block starting 40145 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:25:49,690 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-28 21:25:49,714 [WARNING] Failed to read registers at block starting 40000 from IP: 192.168.29.71, ID: 1
+2025-04-28 21:25:49,715 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-28 21:25:54,719 [INFO] Using local IP 127.0.0.1 to connect to 127.0.0.1:1502
+2025-04-28 21:25:54,719 [INFO] Using local IP 192.168.29.71 to connect to 192.168.29.71:1502
+2025-04-28 21:25:54,721 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-28 21:25:54,721 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-28 21:25:54,734 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-28 21:25:54,734 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-28 21:25:54,735 [WARNING] Failed to read registers at block starting 40000 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:25:54,735 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-28 21:25:54,736 [WARNING] Failed to read registers at block starting 40145 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:25:54,737 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-28 21:25:54,749 [WARNING] Failed to read registers at block starting 40000 from IP: 192.168.29.71, ID: 1
+2025-04-28 21:25:54,750 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-28 21:25:58,286 [WARNING] MQTT client not connected. Skipping publish.
+2025-04-28 21:25:59,765 [INFO] Using local IP 127.0.0.1 to connect to 127.0.0.1:1502
+2025-04-28 21:25:59,765 [INFO] Using local IP 192.168.29.71 to connect to 192.168.29.71:1502
+2025-04-28 21:25:59,767 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-28 21:25:59,767 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-28 21:25:59,779 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-28 21:25:59,780 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-28 21:25:59,782 [WARNING] Failed to read registers at block starting 40000 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:25:59,783 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-28 21:25:59,785 [WARNING] Failed to read registers at block starting 40145 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:25:59,786 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-28 21:25:59,795 [WARNING] Failed to read registers at block starting 40000 from IP: 192.168.29.71, ID: 1
+2025-04-28 21:25:59,796 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-28 21:26:04,808 [INFO] Using local IP 127.0.0.1 to connect to 127.0.0.1:1502
+2025-04-28 21:26:04,808 [INFO] Using local IP 192.168.29.71 to connect to 192.168.29.71:1502
+2025-04-28 21:26:04,809 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-28 21:26:04,809 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-28 21:26:04,809 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-28 21:26:04,810 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-28 21:26:04,812 [WARNING] Failed to read registers at block starting 40000 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:26:04,813 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-28 21:26:04,814 [WARNING] Failed to read registers at block starting 40145 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:26:04,815 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-28 21:26:04,837 [WARNING] Failed to read registers at block starting 40000 from IP: 192.168.29.71, ID: 1
+2025-04-28 21:26:04,838 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-28 21:26:08,289 [WARNING] MQTT client not connected. Skipping publish.
+2025-04-28 21:26:09,856 [INFO] Using local IP 127.0.0.1 to connect to 127.0.0.1:1502
+2025-04-28 21:26:09,857 [INFO] Using local IP 192.168.29.71 to connect to 192.168.29.71:1502
+2025-04-28 21:26:09,859 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-28 21:26:09,860 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-28 21:26:09,870 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-28 21:26:09,871 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-28 21:26:09,872 [WARNING] Failed to read registers at block starting 40000 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:26:09,873 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-28 21:26:09,875 [WARNING] Failed to read registers at block starting 40145 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:26:09,876 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-28 21:26:09,885 [WARNING] Failed to read registers at block starting 40000 from IP: 192.168.29.71, ID: 1
+2025-04-28 21:26:09,886 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-28 21:26:14,900 [INFO] Using local IP 127.0.0.1 to connect to 127.0.0.1:1502
+2025-04-28 21:26:14,901 [INFO] Using local IP 192.168.29.71 to connect to 192.168.29.71:1502
+2025-04-28 21:26:14,902 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-28 21:26:14,903 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-28 21:26:14,904 [WARNING] Failed to read registers at block starting 40000 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:26:14,905 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-28 21:26:14,907 [WARNING] Failed to read registers at block starting 40145 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:26:14,907 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-28 21:26:14,913 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-28 21:26:14,915 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-28 21:26:14,929 [WARNING] Failed to read registers at block starting 40000 from IP: 192.168.29.71, ID: 1
+2025-04-28 21:26:14,930 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-28 21:26:18,301 [WARNING] MQTT client not connected. Skipping publish.
+2025-04-28 21:26:19,935 [INFO] Using local IP 127.0.0.1 to connect to 127.0.0.1:1502
+2025-04-28 21:26:19,935 [INFO] Using local IP 192.168.29.71 to connect to 192.168.29.71:1502
+2025-04-28 21:26:19,937 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-28 21:26:19,937 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-28 21:26:19,938 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-28 21:26:19,938 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-28 21:26:19,940 [WARNING] Failed to read registers at block starting 40000 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:26:19,942 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-28 21:26:19,943 [WARNING] Failed to read registers at block starting 40145 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:26:19,944 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-28 21:26:19,963 [WARNING] Failed to read registers at block starting 40000 from IP: 192.168.29.71, ID: 1
+2025-04-28 21:26:19,964 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-28 21:26:24,975 [INFO] Using local IP 127.0.0.1 to connect to 127.0.0.1:1502
+2025-04-28 21:26:24,976 [INFO] Using local IP 192.168.29.71 to connect to 192.168.29.71:1502
+2025-04-28 21:26:24,977 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-28 21:26:24,977 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-28 21:26:24,977 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-28 21:26:24,978 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-28 21:26:24,979 [WARNING] Failed to read registers at block starting 40000 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:26:24,980 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-28 21:26:24,982 [WARNING] Failed to read registers at block starting 40145 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:26:24,983 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-28 21:26:25,004 [WARNING] Failed to read registers at block starting 40000 from IP: 192.168.29.71, ID: 1
+2025-04-28 21:26:25,005 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-28 21:26:28,315 [WARNING] MQTT client not connected. Skipping publish.
+2025-04-28 21:26:30,015 [INFO] Using local IP 127.0.0.1 to connect to 127.0.0.1:1502
+2025-04-28 21:26:30,016 [INFO] Using local IP 192.168.29.71 to connect to 192.168.29.71:1502
+2025-04-28 21:26:30,018 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-28 21:26:30,018 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-28 21:26:30,030 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-28 21:26:30,031 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-28 21:26:30,033 [WARNING] Failed to read registers at block starting 40000 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:26:30,034 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-28 21:26:30,036 [WARNING] Failed to read registers at block starting 40145 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:26:30,037 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-28 21:26:30,045 [WARNING] Failed to read registers at block starting 40000 from IP: 192.168.29.71, ID: 1
+2025-04-28 21:26:30,046 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-28 21:26:35,056 [INFO] Using local IP 127.0.0.1 to connect to 127.0.0.1:1502
+2025-04-28 21:26:35,057 [INFO] Using local IP 192.168.29.71 to connect to 192.168.29.71:1502
+2025-04-28 21:26:35,060 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-28 21:26:35,060 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-28 21:26:35,060 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-28 21:26:35,062 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-28 21:26:35,063 [WARNING] Failed to read registers at block starting 40000 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:26:35,064 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-28 21:26:35,066 [WARNING] Failed to read registers at block starting 40145 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:26:35,067 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-28 21:26:35,100 [WARNING] Failed to read registers at block starting 40000 from IP: 192.168.29.71, ID: 1
+2025-04-28 21:26:35,101 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-28 21:26:38,326 [WARNING] MQTT client not connected. Skipping publish.
+2025-04-28 21:26:40,107 [INFO] Using local IP 127.0.0.1 to connect to 127.0.0.1:1502
+2025-04-28 21:26:40,107 [INFO] Using local IP 192.168.29.71 to connect to 192.168.29.71:1502
+2025-04-28 21:26:40,108 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-28 21:26:40,108 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-28 21:26:40,121 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-28 21:26:40,122 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-28 21:26:40,123 [WARNING] Failed to read registers at block starting 40000 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:26:40,123 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-28 21:26:40,125 [WARNING] Failed to read registers at block starting 40145 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:26:40,125 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-28 21:26:40,137 [WARNING] Failed to read registers at block starting 40000 from IP: 192.168.29.71, ID: 1
+2025-04-28 21:26:40,138 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-28 21:26:45,147 [INFO] Using local IP 127.0.0.1 to connect to 127.0.0.1:1502
+2025-04-28 21:26:45,148 [INFO] Using local IP 192.168.29.71 to connect to 192.168.29.71:1502
+2025-04-28 21:26:45,148 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-28 21:26:45,149 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-28 21:26:45,149 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-28 21:26:45,149 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-28 21:26:45,150 [WARNING] Failed to read registers at block starting 40000 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:26:45,150 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-28 21:26:45,151 [WARNING] Failed to read registers at block starting 40145 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:26:45,151 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-28 21:26:45,177 [WARNING] Failed to read registers at block starting 40000 from IP: 192.168.29.71, ID: 1
+2025-04-28 21:26:45,177 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-28 21:26:48,336 [WARNING] MQTT client not connected. Skipping publish.
+2025-04-28 21:26:50,187 [INFO] Using local IP 127.0.0.1 to connect to 127.0.0.1:1502
+2025-04-28 21:26:50,187 [INFO] Using local IP 192.168.29.71 to connect to 192.168.29.71:1502
+2025-04-28 21:26:50,188 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-28 21:26:50,189 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-28 21:26:50,201 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-28 21:26:50,202 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-28 21:26:50,203 [WARNING] Failed to read registers at block starting 40000 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:26:50,204 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-28 21:26:50,205 [WARNING] Failed to read registers at block starting 40145 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:26:50,205 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-28 21:26:50,217 [WARNING] Failed to read registers at block starting 40000 from IP: 192.168.29.71, ID: 1
+2025-04-28 21:26:50,218 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-28 21:26:55,225 [INFO] Using local IP 192.168.29.71 to connect to 192.168.29.71:1502
+2025-04-28 21:26:55,225 [INFO] Using local IP 127.0.0.1 to connect to 127.0.0.1:1502
+2025-04-28 21:26:55,226 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-28 21:26:55,227 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-28 21:26:55,227 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-28 21:26:55,228 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-28 21:26:55,229 [WARNING] Failed to read registers at block starting 40000 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:26:55,230 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-28 21:26:55,231 [WARNING] Failed to read registers at block starting 40145 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:26:55,231 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-28 21:26:55,254 [WARNING] Failed to read registers at block starting 40000 from IP: 192.168.29.71, ID: 1
+2025-04-28 21:26:55,255 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-28 21:26:58,343 [WARNING] MQTT client not connected. Skipping publish.
+2025-04-28 21:27:00,263 [INFO] Using local IP 127.0.0.1 to connect to 127.0.0.1:1502
+2025-04-28 21:27:00,265 [INFO] Using local IP 192.168.29.71 to connect to 192.168.29.71:1502
+2025-04-28 21:27:00,266 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-28 21:27:00,267 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-28 21:27:00,277 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-28 21:27:00,278 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-28 21:27:00,279 [WARNING] Failed to read registers at block starting 40000 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:27:00,279 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-28 21:27:00,280 [WARNING] Failed to read registers at block starting 40145 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:27:00,280 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-28 21:27:00,308 [WARNING] Failed to read registers at block starting 40000 from IP: 192.168.29.71, ID: 1
+2025-04-28 21:27:00,309 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-28 21:27:05,311 [INFO] Using local IP 127.0.0.1 to connect to 127.0.0.1:1502
+2025-04-28 21:27:05,312 [INFO] Using local IP 192.168.29.71 to connect to 192.168.29.71:1502
+2025-04-28 21:27:05,313 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-28 21:27:05,314 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-28 21:27:05,314 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-28 21:27:05,314 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-28 21:27:05,315 [WARNING] Failed to read registers at block starting 40000 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:27:05,316 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-28 21:27:05,316 [WARNING] Failed to read registers at block starting 40145 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:27:05,318 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-28 21:27:05,341 [WARNING] Failed to read registers at block starting 40000 from IP: 192.168.29.71, ID: 1
+2025-04-28 21:27:05,342 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-28 21:27:08,354 [WARNING] MQTT client not connected. Skipping publish.
+2025-04-28 21:27:10,352 [INFO] Using local IP 127.0.0.1 to connect to 127.0.0.1:1502
+2025-04-28 21:27:10,353 [INFO] Using local IP 192.168.29.71 to connect to 192.168.29.71:1502
+2025-04-28 21:27:10,353 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-28 21:27:10,354 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-28 21:27:10,354 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-28 21:27:10,354 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-28 21:27:10,355 [WARNING] Failed to read registers at block starting 40000 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:27:10,355 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-28 21:27:10,356 [WARNING] Failed to read registers at block starting 40145 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:27:10,356 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-28 21:27:10,383 [WARNING] Failed to read registers at block starting 40000 from IP: 192.168.29.71, ID: 1
+2025-04-28 21:27:10,384 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-28 21:27:15,394 [INFO] Using local IP 127.0.0.1 to connect to 127.0.0.1:1502
+2025-04-28 21:27:15,395 [INFO] Using local IP 192.168.29.71 to connect to 192.168.29.71:1502
+2025-04-28 21:27:15,396 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-28 21:27:15,396 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-28 21:27:15,396 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-28 21:27:15,397 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-28 21:27:15,398 [WARNING] Failed to read registers at block starting 40000 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:27:15,398 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-28 21:27:15,399 [WARNING] Failed to read registers at block starting 40145 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:27:15,400 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-28 21:27:15,423 [WARNING] Failed to read registers at block starting 40000 from IP: 192.168.29.71, ID: 1
+2025-04-28 21:27:15,424 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-28 21:27:18,356 [WARNING] MQTT client not connected. Skipping publish.
+2025-04-28 21:27:20,431 [INFO] Using local IP 127.0.0.1 to connect to 127.0.0.1:1502
+2025-04-28 21:27:20,431 [INFO] Using local IP 192.168.29.71 to connect to 192.168.29.71:1502
+2025-04-28 21:27:20,433 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-28 21:27:20,433 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-28 21:27:20,433 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-28 21:27:20,434 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-28 21:27:20,435 [WARNING] Failed to read registers at block starting 40000 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:27:20,436 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-28 21:27:20,436 [WARNING] Failed to read registers at block starting 40145 from IP: 127.0.0.1, ID: 1
+2025-04-28 21:27:20,436 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-28 21:27:20,461 [WARNING] Failed to read registers at block starting 40000 from IP: 192.168.29.71, ID: 1
+2025-04-28 21:27:20,462 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-28 21:27:43,482 [ERROR] MQTT (AWS IoT) connection failed: [Errno 2] No such file or directory: 'rbpiccr-001-certificate.pem.crt'
+2025-04-28 21:27:43,485 [WARNING] MQTT client not connected. Skipping publish.
+2025-04-28 21:27:43,486 [INFO] Using local IP 127.0.0.1 to connect to 127.0.0.1:1502
+2025-04-28 21:27:43,486 [INFO] Using local IP 192.168.29.71 to connect to 192.168.29.71:1502
+2025-04-28 21:27:43,491 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-28 21:27:43,491 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-28 21:27:43,491 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-28 21:27:43,492 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-28 21:27:43,494 [INFO] Read mains_kw = 0.1 from IP: 127.0.0.1, ID: 1, Address: 40000
+2025-04-28 21:27:43,494 [INFO] Read pv_kw = 1310750.0 from IP: 127.0.0.1, ID: 1, Address: 40001
+2025-04-28 21:27:43,494 [INFO] Read load_kw = 50.0 from IP: 127.0.0.1, ID: 1, Address: 40003
+2025-04-28 21:27:43,495 [INFO] Read Time Zone = 26214.9 from IP: 127.0.0.1, ID: 1, Address: 40004
+2025-04-28 21:27:43,495 [INFO] Read DST state = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40006
+2025-04-28 21:27:43,495 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-28 21:27:43,496 [INFO] Read Next Block Test = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40145
+2025-04-28 21:27:43,496 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-28 21:27:43,531 [INFO] Read Test1 = 0.7 from IP: 192.168.29.71, ID: 1, Address: 40000
+2025-04-28 21:27:43,532 [INFO] Read Test2 = 393216.0 from IP: 192.168.29.71, ID: 1, Address: 40001
+2025-04-28 21:27:43,532 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-28 21:27:48,542 [INFO] Using local IP 127.0.0.1 to connect to 127.0.0.1:1502
+2025-04-28 21:27:48,542 [INFO] Using local IP 192.168.29.71 to connect to 192.168.29.71:1502
+2025-04-28 21:27:48,544 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-28 21:27:48,545 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-28 21:27:48,545 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-28 21:27:48,546 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-28 21:27:48,547 [INFO] Read mains_kw = 0.1 from IP: 127.0.0.1, ID: 1, Address: 40000
+2025-04-28 21:27:48,548 [INFO] Read pv_kw = 1310750.0 from IP: 127.0.0.1, ID: 1, Address: 40001
+2025-04-28 21:27:48,548 [INFO] Read load_kw = 50.0 from IP: 127.0.0.1, ID: 1, Address: 40003
+2025-04-28 21:27:48,549 [INFO] Read Time Zone = 26214.9 from IP: 127.0.0.1, ID: 1, Address: 40004
+2025-04-28 21:27:48,550 [INFO] Read DST state = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40006
+2025-04-28 21:27:48,550 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-28 21:27:48,551 [INFO] Read Next Block Test = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40145
+2025-04-28 21:27:48,552 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-28 21:27:48,571 [INFO] Read Test1 = 0.7 from IP: 192.168.29.71, ID: 1, Address: 40000
+2025-04-28 21:27:48,572 [INFO] Read Test2 = 393216.0 from IP: 192.168.29.71, ID: 1, Address: 40001
+2025-04-28 21:27:48,572 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-28 21:27:53,495 [WARNING] MQTT client not connected. Skipping publish.
+2025-04-28 21:27:53,575 [INFO] Using local IP 127.0.0.1 to connect to 127.0.0.1:1502
+2025-04-28 21:27:53,575 [INFO] Using local IP 192.168.29.71 to connect to 192.168.29.71:1502
+2025-04-28 21:27:53,576 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-28 21:27:53,576 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-28 21:27:53,576 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-28 21:27:53,577 [INFO] Read mains_kw = 0.1 from IP: 127.0.0.1, ID: 1, Address: 40000
+2025-04-28 21:27:53,577 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-28 21:27:53,578 [INFO] Read pv_kw = 1310750.0 from IP: 127.0.0.1, ID: 1, Address: 40001
+2025-04-28 21:27:53,578 [INFO] Read load_kw = 50.0 from IP: 127.0.0.1, ID: 1, Address: 40003
+2025-04-28 21:27:53,579 [INFO] Read Time Zone = 26214.9 from IP: 127.0.0.1, ID: 1, Address: 40004
+2025-04-28 21:27:53,579 [INFO] Read DST state = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40006
+2025-04-28 21:27:53,579 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-28 21:27:53,580 [INFO] Read Next Block Test = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40145
+2025-04-28 21:27:53,580 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-28 21:27:53,605 [INFO] Read Test1 = 0.7 from IP: 192.168.29.71, ID: 1, Address: 40000
+2025-04-28 21:27:53,606 [INFO] Read Test2 = 393216.0 from IP: 192.168.29.71, ID: 1, Address: 40001
+2025-04-28 21:27:53,606 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-28 21:27:58,623 [INFO] Using local IP 127.0.0.1 to connect to 127.0.0.1:1502
+2025-04-28 21:27:58,623 [INFO] Using local IP 192.168.29.71 to connect to 192.168.29.71:1502
+2025-04-28 21:27:58,625 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-28 21:27:58,625 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-28 21:27:58,625 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-28 21:27:58,626 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-28 21:27:58,627 [INFO] Read mains_kw = 0.1 from IP: 127.0.0.1, ID: 1, Address: 40000
+2025-04-28 21:27:58,628 [INFO] Read pv_kw = 1310750.0 from IP: 127.0.0.1, ID: 1, Address: 40001
+2025-04-28 21:27:58,628 [INFO] Read load_kw = 50.0 from IP: 127.0.0.1, ID: 1, Address: 40003
+2025-04-28 21:27:58,629 [INFO] Read Time Zone = 26214.9 from IP: 127.0.0.1, ID: 1, Address: 40004
+2025-04-28 21:27:58,630 [INFO] Read DST state = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40006
+2025-04-28 21:27:58,631 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-28 21:27:58,632 [INFO] Read Next Block Test = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40145
+2025-04-28 21:27:58,632 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-28 21:27:58,653 [INFO] Read Test1 = 0.7 from IP: 192.168.29.71, ID: 1, Address: 40000
+2025-04-28 21:27:58,654 [INFO] Read Test2 = 393216.0 from IP: 192.168.29.71, ID: 1, Address: 40001
+2025-04-28 21:27:58,654 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-28 21:28:03,501 [WARNING] MQTT client not connected. Skipping publish.
+2025-04-28 21:28:03,671 [INFO] Using local IP 127.0.0.1 to connect to 127.0.0.1:1502
+2025-04-28 21:28:03,671 [INFO] Using local IP 192.168.29.71 to connect to 192.168.29.71:1502
+2025-04-28 21:28:03,685 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-28 21:28:03,685 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-28 21:28:03,686 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-28 21:28:03,686 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-28 21:28:03,688 [INFO] Read mains_kw = 0.1 from IP: 127.0.0.1, ID: 1, Address: 40000
+2025-04-28 21:28:03,690 [INFO] Read pv_kw = 1310750.0 from IP: 127.0.0.1, ID: 1, Address: 40001
+2025-04-28 21:28:03,690 [INFO] Read load_kw = 50.0 from IP: 127.0.0.1, ID: 1, Address: 40003
+2025-04-28 21:28:03,691 [INFO] Read Time Zone = 26214.9 from IP: 127.0.0.1, ID: 1, Address: 40004
+2025-04-28 21:28:03,691 [INFO] Read DST state = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40006
+2025-04-28 21:28:03,691 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-28 21:28:03,691 [INFO] Read Next Block Test = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40145
+2025-04-28 21:28:03,692 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-28 21:28:03,702 [INFO] Read Test1 = 0.7 from IP: 192.168.29.71, ID: 1, Address: 40000
+2025-04-28 21:28:03,702 [INFO] Read Test2 = 393216.0 from IP: 192.168.29.71, ID: 1, Address: 40001
+2025-04-28 21:28:03,703 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-28 21:28:08,712 [INFO] Using local IP 127.0.0.1 to connect to 127.0.0.1:1502
+2025-04-28 21:28:08,712 [INFO] Using local IP 192.168.29.71 to connect to 192.168.29.71:1502
+2025-04-28 21:28:08,713 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-28 21:28:08,713 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-28 21:28:08,714 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-28 21:28:08,714 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-28 21:28:08,714 [INFO] Read mains_kw = 0.1 from IP: 127.0.0.1, ID: 1, Address: 40000
+2025-04-28 21:28:08,715 [INFO] Read pv_kw = 1310750.0 from IP: 127.0.0.1, ID: 1, Address: 40001
+2025-04-28 21:28:08,715 [INFO] Read load_kw = 50.0 from IP: 127.0.0.1, ID: 1, Address: 40003
+2025-04-28 21:28:08,715 [INFO] Read Time Zone = 26214.9 from IP: 127.0.0.1, ID: 1, Address: 40004
+2025-04-28 21:28:08,715 [INFO] Read DST state = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40006
+2025-04-28 21:28:08,716 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-28 21:28:08,716 [INFO] Read Next Block Test = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40145
+2025-04-28 21:28:08,717 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-28 21:28:08,742 [INFO] Read Test1 = 0.7 from IP: 192.168.29.71, ID: 1, Address: 40000
+2025-04-28 21:28:08,742 [INFO] Read Test2 = 393216.0 from IP: 192.168.29.71, ID: 1, Address: 40001
+2025-04-28 21:28:08,743 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+2025-04-28 21:28:13,508 [WARNING] MQTT client not connected. Skipping publish.
+2025-04-28 21:28:13,746 [INFO] Using local IP 127.0.0.1 to connect to 127.0.0.1:1502
+2025-04-28 21:28:13,747 [INFO] Using local IP 192.168.29.71 to connect to 192.168.29.71:1502
+2025-04-28 21:28:13,749 [INFO] Connected to device at IP: 192.168.29.71, ID: 1
+2025-04-28 21:28:13,749 [INFO] Reading from Device IP: 192.168.29.71, ID: 1, Function Code: 3, Address Block: 40000 to 40002
+2025-04-28 21:28:13,761 [INFO] Connected to device at IP: 127.0.0.1, ID: 1
+2025-04-28 21:28:13,761 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40000 to 40006
+2025-04-28 21:28:13,762 [INFO] Read mains_kw = 0.1 from IP: 127.0.0.1, ID: 1, Address: 40000
+2025-04-28 21:28:13,762 [INFO] Read pv_kw = 1310750.0 from IP: 127.0.0.1, ID: 1, Address: 40001
+2025-04-28 21:28:13,762 [INFO] Read load_kw = 50.0 from IP: 127.0.0.1, ID: 1, Address: 40003
+2025-04-28 21:28:13,763 [INFO] Read Time Zone = 26214.9 from IP: 127.0.0.1, ID: 1, Address: 40004
+2025-04-28 21:28:13,763 [INFO] Read DST state = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40006
+2025-04-28 21:28:13,763 [INFO] Reading from Device IP: 127.0.0.1, ID: 1, Function Code: 3, Address Block: 40145 to 40145
+2025-04-28 21:28:13,763 [INFO] Read Next Block Test = 0.0 from IP: 127.0.0.1, ID: 1, Address: 40145
+2025-04-28 21:28:13,763 [INFO] Disconnected from IP: 127.0.0.1, ID: 1
+2025-04-28 21:28:13,777 [INFO] Read Test1 = 0.7 from IP: 192.168.29.71, ID: 1, Address: 40000
+2025-04-28 21:28:13,777 [INFO] Read Test2 = 393216.0 from IP: 192.168.29.71, ID: 1, Address: 40001
+2025-04-28 21:28:13,778 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
+>>>>>>> 4c30550 (AWS MQTT Added)

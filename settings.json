@@ -6,10 +6,8 @@
     "max_registers": 100,
     "mqtt": {
       "enabled": true,
-      "broker": "public-mqtt-broker.bevywise.com",
-      "port": 1883,
-      "topic": "renewablebot/modbus",
       "publish_interval": 10
+<<<<<<< HEAD
     },
 
     "sql": {
@@ -22,4 +20,8 @@
     "table": "[dbo].[PowerPulse_LiveData]"
   }
   }
+=======
+    }
+}
+>>>>>>> 4c30550 (AWS MQTT Added)
   
