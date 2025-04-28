@@ -24,9 +24,6 @@ logging.basicConfig(level=logging.INFO)
 # Print current working directory
 print("Current working directory:", os.getcwd())
 
-# Setup Flask app and logging
-app = create_app()
-
 os.makedirs("logs", exist_ok=True)
 logger = logging.getLogger("modbus")
 logger.setLevel(logging.INFO)
