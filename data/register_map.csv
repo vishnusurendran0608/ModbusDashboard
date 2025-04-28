@@ -40,17 +40,14 @@
 1,Smart Logger,Uab,RO,U16,V,10,40575,1
 1,Smart Logger,Ubc,RO,U16,V,10,40576,1
 1,Smart Logger,Uca,RO,U16,V,10,40577,1
-1,Smart Logger,Reserved,RO,U16,N/A,1,40608,10
 1,Smart Logger,Inverter Efficiency,RO,U16,%,100,40685,1
 1,Smart Logger,Max. reactive adjustment,RO,U32,kVar,10,40693,2
 1,Smart Logger,Min. reactive adjustment,RO,I32,kVar,10,40695,2
 1,Smart Logger,Max. activeadjustm ent,RO,U32,kW,10,40697,2
 1,Smart Logger,Locked,RO,U16,N/A,1,40699,1
 1,Smart Logger,DI status,RO,U16,N/A,1,40700,1
-1,Smart Logger,ESN,RO,STR,N/A,1,40713,10
 1,Smart Logger,System reset,WO,U16,N/A,1,40723,1
 1,Smart Logger,Fast device access,WO,U16,N/A,1,40724,1
-1,Smart Logger,Device operation,WO,MLD,N/A,1,40725,11
 1,Smart Logger,Device access status,RO,U16,N/A,1,40736,1
 1,Smart Logger,Active power control mode,RO,U16,N/A,1,40737,1
 1,Smart Logger,Active power scheduling target value,RO,U32,kW,10,40738,2
@@ -76,8 +73,6 @@
 1,Smart Logger,Current error during scanning,RW,U16,N/A,100,42150,1
 1,Smart Logger,Inspection,WO,U16,N/A,1,42730,1
 1,Smart Logger,IV curve scanning,WO,U16,N/A,1,42779,1
-1,Smart Logger,Alarm Info 1,RO,U16,N/A,1,50000,1
-1,Smart Logger,Alarm Info 2,RO,U16,N/A,1,50001,1
 2,Inverter,PV1 Voltage/PV1 V,RO,I16,V,10,40500,1
 2,Inverter,PV2 Voltage/PV2 V,RO,I16,V,10,40501,1
 2,Inverter,PV3 Voltage/PV3 V,RO,I16,V,10,40502,1
