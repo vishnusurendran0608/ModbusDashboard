@@ -28,7 +28,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 CERT_PATH = BASE_DIR / f"{pi_id}-certificate.pem.crt"
 KEY_PATH = BASE_DIR / f"{pi_id}-private.pem.key"
-CA_PATH = "AmazonRootCA1.pem"
+CA_PATH = BASE_DIR /"AmazonRootCA1.pem"
 
 # Event to signal when the script is done (e.g., on KeyboardInterrupt).
 is_sample_done = threading.Event()
