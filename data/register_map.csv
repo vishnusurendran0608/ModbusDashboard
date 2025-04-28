@@ -1,14 +1,4 @@
 ﻿device_type_id,device_type,variable_name,access,type,unit,gain,address,quantity
-<<<<<<< HEAD
-1,Smart Logger,Date&Time,RW,U16,N/A,10,40000,1
-1,Smart Logger,City,RW,U32,N/A,1,40001,2
-1,Smart Logger,Daylight Saving Time (DST),RW,U16,N/A,1,40003,1
-1,Smart Logger,Time Zone,RO,I32,S,100,40004,2
-1,Smart Logger,DST state,RO,U16,N/A,1,40006,1
-1,Smart Logger,Next Block Test,RO,U16,N/A,1,40145,1
-2,Inverter,Test1,RW,U16,N/A,10,40000,1
-2,Inverter,Test2,RW,U32,N/A,1,40001,2
-=======
 1,Smart Logger,Date&Time,RW,U32,N/A,1,40000,2
 1,Smart Logger,City,RW,U32,N/A,1,40002,2
 1,Smart Logger,Daylight Saving Time (DST),RW,U16,N/A,1,40004,1
@@ -171,4 +161,3 @@
 3,Power Meter,Negative reactive electricity,RO,I64,kvarh,100,32353,4
 3,Power Meter,Positive active electricity,RO,I64,kWh,100,32357,4
 3,Power Meter,Positive reactive electricity,RO,I64,kvarh,100,32361,4
->>>>>>> 4c30550 (AWS MQTT Added)
