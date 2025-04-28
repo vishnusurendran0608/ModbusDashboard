@@ -12,7 +12,7 @@
 1,Smart Logger,Power on/off,WO,U16,N/A,1,40203,1
 1,Smart Logger,Transfer trip,RW,U16,N/A,1,40204,1
 1,Smart Logger,Array reset,WO,U16,N/A,1,40205,1
-1,Smart Logger,mains_kw,RW,U32,kW,10,40420,2
+1,Smart Logger,Active adjustment,RW,U32,kW,10,40420,2
 1,Smart Logger,Reactive adjustment,RW,I32,kVar,10,40422,2
 1,Smart Logger,Active adjustment,RW,U32,kW,10,40424,2
 1,Smart Logger,Reactive adjustment,RW,I32,kVar,10,40426,2
@@ -59,7 +59,7 @@
 1,Smart Logger,Reactive power scheduling target value,RO,I32,kVar,10,40742,2
 1,Smart Logger,Active scheduling percentage,RO,U32,%,1,40802,2
 1,Smart Logger,CO2,RW,U16,kg/k Wh,1000,41124,1
-1,Smart Logger,pv_kw,RO,U32,kW,1000,41934,2
+1,Smart Logger,PV plant capacity,RO,U32,kW,1000,41934,2
 1,Smart Logger,Rated plant capacity,RO,U32,kW,1000,41936,2
 1,Smart Logger,Total rated capacity of grid-connecte d inverters,RO,U32,kW,1000,41938,2
 1,Smart Logger,Conversion coefficient,RO,U32,N/A,1000,41940,2
@@ -91,7 +91,7 @@
 2,Inverter,PV5 Current/PV5 I,RO,I16,A,100,40510,1
 2,Inverter,PV6 Current/PV6 I,RO,I16,A,100,40511,1
 2,Inverter,CO2 reduction,RO,U32,kg,100,40523,2
-2,Inverter,Active power,RO,I32,kW,1000,40525,2
+2,Inverter,pv_kw,RO,I32,kW,1000,40525,2
 2,Inverter,Uab,RO,U16,V,100,40527,1
 2,Inverter,Ubc,RO,U16,V,100,40528,1
 2,Inverter,Uca,RO,U16,V,100,40529,1
@@ -126,7 +126,7 @@
 3,Power Meter,Phase A current,RO,I32,A,10,32272,2
 3,Power Meter,Phase B current,RO,I32,A,10,32274,2
 3,Power Meter,Phase C current,RO,I32,A,10,32276,2
-3,Power Meter,Active power,RO,I32,kW,1000,32278,2
+3,Power Meter,mains_kw,RO,I32,kW,1000,32278,2
 3,Power Meter,Reactive power,RO,I32,kVar,1000,32280,2
 3,Power Meter,Active electricity(Reserved),RO,I32,kWh,10,32282,2
 3,Power Meter,Power factor,RO,I16,N/A,1000,32284,1

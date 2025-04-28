@@ -6,6 +6,7 @@ import time
 import logging
 from awscrt import io, mqtt5
 from awsiot import mqtt5_client_builder
+from pathlib import Path
 
 mqtt_client_instance = None
 logger = logging.getLogger("modbus")
@@ -22,9 +23,11 @@ pi_id = config.get('pi_id')
 # Endpoint for AWS IoT Core
 AWS_IOT_ENDPOINT = "d037955127pwy1xzu5whf-ats.iot.eu-west-1.amazonaws.com"
 
-# Paths to the shared provisioning claim certificate and keys used for initial provisioning.
-CERT_PATH = f"{pi_id}-certificate.pem.crt"
-KEY_PATH = f"{pi_id}-private.pem.key"
+# Get the directory two levels up (Root Folder)
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+CERT_PATH = BASE_DIR / f"{pi_id}-certificate.pem.crt"
+KEY_PATH = BASE_DIR / f"{pi_id}-private.pem.key"
 CA_PATH = "AmazonRootCA1.pem"
 
 # Event to signal when the script is done (e.g., on KeyboardInterrupt).
