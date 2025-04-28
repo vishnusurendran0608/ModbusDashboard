@@ -118,7 +118,7 @@ def poll_device(device):
                                 "device_name": device["device_type"]
                             }
                             device_data[device_key].append(entry)
-                            append_to_cache(entry)
+                            #append_to_cache(entry)
 
                         logger.info(f"Read {variable} = {value} from IP: {ip}, ID: {unit_id}, Address: {addr}")
                     except Exception as e:

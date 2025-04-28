@@ -5,23 +5,9 @@
     "port": 5000,
     "max_registers": 100,
     "mqtt": {
+      "topic":"renewablebot/modbus",
       "enabled": true,
       "publish_interval": 10
-<<<<<<< HEAD
-    },
-
-    "sql": {
-    "enabled": true,
-    "driver": "ODBC Driver 17 for SQL Server",
-    "server": "rebotdevcds.database.windows.net",
-    "database": "windindexT",
-    "uid": "sqlAdmin",
-    "pwd": "Reb0t@2023",
-    "table": "[dbo].[PowerPulse_LiveData]"
-  }
-  }
-=======
     }
 }
->>>>>>> 4c30550 (AWS MQTT Added)
   

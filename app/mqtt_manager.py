@@ -86,13 +86,21 @@ def initialize_mqtt(settings):
 
 def publish_to_mqtt(device_data, settings):
     mqtt_config = settings.get("mqtt", {})
-
+    payload = {
+        "tenant_id": config["tenant_id"],
+        "customer_id": config["customer_id"],
+        "site_id": config["site_id"],
+        "pi_id": pi_id,
+        "timestamp": int(time.time() * 1000),
+        "devices": device_data
+    }
+    topic = f"solar/{payload['tenant_id']}/{payload['customer_id']}/{payload['site_id']}/{payload['pi_id']}/data"
     if mqtt_client_instance:
         try:
             payload = json.dumps(device_data, default=str)
             publish_future = mqtt_client_instance.publish(
                 mqtt5.PublishPacket(
-                    topic=mqtt_config.get("topic", "default/topic"),
+                    topic=mqtt_config.get(topic, "default/topic"),
                     payload=payload.encode("utf-8"),
                     qos=mqtt5.QoS.AT_LEAST_ONCE,
                 )
