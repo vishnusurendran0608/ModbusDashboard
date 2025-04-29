@@ -101,13 +101,13 @@ def publish_to_mqtt(device_data, settings):
             payload = json.dumps(device_data, default=str)
             publish_future = mqtt_client_instance.publish(
                 mqtt5.PublishPacket(
-                    topic=mqtt_config.get(topic, "default/topic"),
+                    topic=topic,
                     payload=payload.encode("utf-8"),
                     qos=mqtt5.QoS.AT_LEAST_ONCE,
                 )
             )
             publish_future.result()
-            logger.info(f"Published payload to AWS IoT Core topic: {mqtt_config.get('topic')}")
+            logger.info(f"Published payload to AWS IoT Core topic: {topic}")
         except Exception as e:
             logger.error(f"Failed to publish to AWS IoT: {e}")
     else:
