@@ -98,7 +98,7 @@ def publish_to_mqtt(device_data, settings):
     topic = f"solar/{payload['tenant_id']}/{payload['customer_id']}/{payload['site_id']}/{payload['pi_id']}/data"
     if mqtt_client_instance:
         try:
-            payload = json.dumps(device_data, default=str)
+            payload = json.dumps(payload, default=str)
             publish_future = mqtt_client_instance.publish(
                 mqtt5.PublishPacket(
                     topic=topic,
