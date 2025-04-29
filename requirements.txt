@@ -2,3 +2,6 @@ flask
 pymodbus
 paho-mqtt
 pyodbc
+awscrt
+awsiot
+boto3
