@@ -26,13 +26,13 @@ AWS_IOT_ENDPOINT = "d037955127pwy1xzu5whf-ats.iot.eu-west-1.amazonaws.com"
 # Get the directory two levels up (Root Folder)
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-CERT_PATH = BASE_DIR / f"{pi_id}-certificate.pem.crt"
-KEY_PATH = BASE_DIR / f"{pi_id}-private.pem.key"
-CA_PATH = BASE_DIR /"AmazonRootCA1.pem"
+CERT_PATH = f"{pi_id}-certificate.pem.crt"
+KEY_PATH = f"{pi_id}-private.pem.key"
+CA_PATH = "AmazonRootCA1.pem"
 
 # Event to signal when the script is done (e.g., on KeyboardInterrupt).
 is_sample_done = threading.Event()
-
+future_connection_success = Future()
 # ----------------------
 # Lifecycle Callbacks
 # ----------------------
@@ -63,10 +63,6 @@ def initialize_mqtt(settings):
     mqtt_config = settings.get("mqtt", {})
     if mqtt_config.get("enabled", False):
         try:
-            event_loop_group = io.EventLoopGroup(1)
-            host_resolver = io.DefaultHostResolver(event_loop_group)
-            client_bootstrap = io.ClientBootstrap(event_loop_group, host_resolver)
-
             mqtt_client_instance = mqtt5_client_builder.mtls_from_path(
                                    endpoint=AWS_IOT_ENDPOINT,
                                    port=8883,
@@ -79,9 +75,9 @@ def initialize_mqtt(settings):
                                    on_lifecycle_connection_success=on_lifecycle_connection_success,
                                    on_lifecycle_stopped=on_lifecycle_stopped)                               
 
-            connect_future = mqtt_client_instance.start()
-            connect_future.result()
-            logger.info(f"Connected to AWS IoT Core at {mqtt_config['endpoint']}")
+            mqtt_client_instance.start()
+            future_connection_success.result()
+            logger.info(f"Connected to AWS IoT Core at {AWS_IOT_ENDPOINT}")
 
         except Exception as e:
             logger.error(f"MQTT (AWS IoT) connection failed: {e}")
