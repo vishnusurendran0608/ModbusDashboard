@@ -86,15 +86,38 @@ def initialize_mqtt(settings):
             mqtt_client_instance = None
 
 def publish_to_mqtt(device_data, settings):
-    mqtt_config = settings.get("mqtt", {})
+    organized_devices = []
+    for device_key, entries in device_data.items():
+        if not entries:
+            continue
+
+        # Use first entry to extract static info
+        first_entry = entries[0]
+        device_type = first_entry.get("device_type", "")
+        device_name = first_entry.get("device_name", "")
+
+        metrics = {}
+        for entry in entries:
+            variable = entry["variable_name"]
+            value = entry["value"]
+            metrics[variable] = value
+
+        organized_devices.append({
+            "device_id": device_key,
+            "device_type": device_type,
+            "device_name": device_name,
+            "metrics": metrics
+        })
+    
     payload = {
         "tenant_id": config["tenant_id"],
         "customer_id": config["customer_id"],
         "site_id": config["site_id"],
         "pi_id": pi_id,
         "timestamp": int(time.time() * 1000),
-        "devices": device_data
+        "devices": organized_devices
     }
+    
     topic = f"solar/{payload['tenant_id']}/{payload['customer_id']}/{payload['site_id']}/{payload['pi_id']}/data"
     if mqtt_client_instance:
         try:

@@ -115,7 +115,7 @@ def poll_device(device):
                                 "address": addr,
                                 "value": value,
                                 "unit": reg.get("unit", ""),
-                                "device_name": device["device_type"]
+                                "device_name": device["device_name"]
                             }
                             device_data[device_key].append(entry)
                             #append_to_cache(entry)

@@ -24,7 +24,7 @@ def parse_device_map(path):
         for row in reader:
             device_map.append({
                 "slave_id": int(row["slave_id"]),
-                "device_type": row["device_type"].strip(),
+                "device_name": row["device_name"].strip(),
                 "device_type_id": row["device_type_id"].strip(),
                 "ip_address": row["ip_address"].strip(),
                 "byte_swap": row.get("byte_swap", "none").strip()
