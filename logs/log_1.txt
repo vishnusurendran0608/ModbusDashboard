@@ -22900,3 +22900,18 @@
 2025-04-28 21:28:13,777 [INFO] Read Test2 = 393216.0 from IP: 192.168.29.71, ID: 1, Address: 40001
 2025-04-28 21:28:13,778 [INFO] Disconnected from IP: 192.168.29.71, ID: 1
 >>>>>>> 4c30550 (AWS MQTT Added)
+2025-05-01 18:13:38,039 [ERROR] MQTT (AWS IoT) connection failed: [Errno 2] No such file or directory: 'rbpiccr-001-certificate.pem.crt'
+2025-05-01 18:13:38,043 [INFO] Started Modbus polling thread.
+2025-05-01 18:13:38,043 [INFO] Started Modbus polling thread.
+2025-05-01 18:13:38,045 [INFO] Starting Flask dashboard server...
+2025-05-01 18:13:38,045 [INFO] Starting Flask dashboard server...
+2025-05-01 18:13:41,059 [WARNING] Unable to connect to IP: 192.168.0.10, ID: 1
+2025-05-01 18:13:41,059 [WARNING] Unable to connect to IP: 192.168.0.10, ID: 1
+2025-05-01 18:13:44,068 [WARNING] Unable to connect to IP: 192.168.0.10, ID: 12
+2025-05-01 18:13:44,068 [WARNING] Unable to connect to IP: 192.168.0.10, ID: 12
+2025-05-01 18:13:47,078 [WARNING] Unable to connect to IP: 192.168.0.10, ID: 13
+2025-05-01 18:13:47,078 [WARNING] Unable to connect to IP: 192.168.0.10, ID: 13
+2025-05-01 18:13:50,082 [WARNING] Unable to connect to IP: 192.168.0.10, ID: 14
+2025-05-01 18:13:50,082 [WARNING] Unable to connect to IP: 192.168.0.10, ID: 14
+2025-05-01 18:13:53,089 [WARNING] Unable to connect to IP: 192.168.0.10, ID: 6
+2025-05-01 18:13:53,089 [WARNING] Unable to connect to IP: 192.168.0.10, ID: 6
