@@ -1,25 +1,38 @@
+# logger.py
+
 import logging
-from logging.handlers import RotatingFileHandler
 import os
 
-def setup_logger():
-    log_dir = "logs"
-    os.makedirs(log_dir, exist_ok=True)
+# Ensure log directory exists
+os.makedirs("logs", exist_ok=True)
 
-    logger = logging.getLogger("modbus_logger")
-    logger.setLevel(logging.INFO)
+# Get or create logger
+logger = logging.getLogger("modbus")
+logger.setLevel(logging.INFO)
 
-    # Avoid duplicate handlers if already added
-    if not logger.handlers:
-        file_handler = RotatingFileHandler(
-            os.path.join(log_dir, "modbus.log"), maxBytes=10_000_000, backupCount=5
-        )
-        formatter = logging.Formatter("%(asctime)s [%(levelname)s] %(message)s")
-        file_handler.setFormatter(formatter)
+# Formatter for all log entries
+formatter = logging.Formatter('%(asctime)s [%(levelname)s] %(message)s')
 
-        logger.addHandler(file_handler)
+# Info log handler (INFO and below)
+info_handler = logging.FileHandler("logs/info.log", mode='a', encoding='utf-8')
+info_handler.setLevel(logging.INFO)
+info_handler.addFilter(lambda record: record.levelno <= logging.INFO)
+info_handler.setFormatter(formatter)
 
-    return logger
+# Error log handler (WARNING and above)
+error_handler = logging.FileHandler("logs/error.log", mode='a', encoding='utf-8')
+error_handler.setLevel(logging.WARNING)
+error_handler.setFormatter(formatter)
 
-# Global logger instance
-log = setup_logger()
+# Console log handler
+console_handler = logging.StreamHandler()
+console_handler.setFormatter(formatter)
+
+# Avoid duplicate handlers
+if logger.hasHandlers():
+    logger.handlers.clear()
+
+# Add handlers
+logger.addHandler(info_handler)
+logger.addHandler(error_handler)
+logger.addHandler(console_handler)
