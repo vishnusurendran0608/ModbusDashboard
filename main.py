@@ -1,39 +1,28 @@
-# main.py
-
 import threading
 import os
-from app.modbus_reader import poll_devices
-from app.mqtt_manager import initialize_mqtt, publish_to_mqtt
-from app.cache_manager import initialize_cache
-from app.cloud_uploader import start_sql_thread
-from app.flask_server import create_app
-from app.logger import logger  # Import the configured logger
-
-import time
 import json
+import time
+from app.modbus_reader import poll_devices, get_data
+from app.flask_server import create_app
+from app.mqtt_manager import initialize_mqtt, publish_to_mqtt
+from app.logger import logger  # <- use centralized logger from logger.py
 
-from app.modbus_reader import get_data
-from app.mqtt_manager import mqtt_client_instance, settings
+# Load settings
+with open("settings.json") as f:
+    settings = json.load(f)
 
-# Print current working directory
 print("Current working directory:", os.getcwd())
 
-# Initialize cache DB
-initialize_cache()
+# Initialize MQTT connection
+initialize_mqtt(settings)
 
-# Initialize Flask app
+# Setup Flask app
 app = create_app()
 
-# Start Modbus polling in background
+# Start Modbus polling in a background thread
 poll_thread = threading.Thread(target=poll_devices, daemon=True)
 poll_thread.start()
 logger.info("Started Modbus polling thread.")
-
-# Start SQL upload thread
-start_sql_thread()
-
-# Initialize MQTT connection
-initialize_mqtt()
 
 # Start MQTT publish thread
 def mqtt_publish_thread():
@@ -46,7 +35,7 @@ mqtt_thread = threading.Thread(target=mqtt_publish_thread, daemon=True)
 mqtt_thread.start()
 logger.info("Started MQTT publishing thread.")
 
-# Start Flask dashboard
+# Run Flask server
 if __name__ == "__main__":
     logger.info("Starting Flask dashboard server...")
     app.run(host="0.0.0.0", port=5000, use_reloader=False)
