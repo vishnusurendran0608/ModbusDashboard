@@ -122,11 +122,11 @@ def publish_to_mqtt(device_data, settings):
     topic = f"solar/{payload['tenant_id']}/{payload['customer_id']}/{payload['site_id']}/{payload['pi_id']}/data"
     if mqtt_client_instance:
         try:
-            payload = json.dumps(payload, default=str)
+            payload_json = json.dumps(payload, default=str)
             publish_future = mqtt_client_instance.publish(
                 mqtt5.PublishPacket(
                     topic=topic,
-                    payload=payload.encode("utf-8"),
+                    payload=payload_json.encode("utf-8"),
                     qos=mqtt5.QoS.AT_LEAST_ONCE,
                 )
             )
@@ -144,8 +144,13 @@ def publish_to_mqtt(device_data, settings):
 def sync_cached_payloads():
     cached_payloads = load_cached_payloads()
     for payload in cached_payloads:
-        topic = f"solar/{payload['tenant_id']}/{payload['customer_id']}/{payload['site_id']}/{payload['pi_id']}/data"
         try:
+            # If payload is a string (loaded from file), convert to dict
+            if isinstance(payload, str):
+                payload = json.loads(payload)
+
+            topic = f"solar/{payload['tenant_id']}/{payload['customer_id']}/{payload['site_id']}/{payload['pi_id']}/data"
+
             if mqtt_client_instance:
                 message = mqtt5.PublishPacket(
                     topic=topic,
@@ -153,11 +158,13 @@ def sync_cached_payloads():
                     qos=mqtt5.QoS.AT_LEAST_ONCE,
                 )
                 mqtt_client_instance.publish(message).result()
-                logger.info(f"Synced cached payload to: {topic}")              
+                logger.info(f"Synced cached payload to: {topic}")
             else:
-                logger.warning("MQTT not available. Skipping cache sync.")            
+                logger.warning("MQTT not available. Skipping cache sync.")
                 return
+
         except Exception as e:
             logger.error(f"Error syncing cached payload: {e}")
-            return
+            return  # You can also use 'continue' if you want to try the rest
+
     clear_cache()
