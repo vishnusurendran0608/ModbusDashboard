@@ -2,25 +2,13 @@ import csv
 import json
 import threading
 import time
-import logging
 from pymodbus.client import ModbusTcpClient
 from app.csv_parser import parse_register_map, parse_device_map
 from app.utils import apply_byte_order
 from datetime import datetime
 import os
 from collections import defaultdict
-
-# Ensure logs directory exists
-os.makedirs("logs", exist_ok=True)
-
-# Configure logger
-logger = logging.getLogger("modbus")
-logger.setLevel(logging.INFO)
-handler = logging.FileHandler("logs/log_1.txt", mode='a', encoding='utf-8')
-formatter = logging.Formatter('%(asctime)s [%(levelname)s] %(message)s')
-handler.setFormatter(formatter)
-if not logger.hasHandlers():
-    logger.addHandler(handler)
+from app.logger import logger  # <- use centralized logger from logger.py
 
 # Load configuration
 with open("settings.json") as f:
