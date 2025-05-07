@@ -1,6 +1,6 @@
 ﻿device_id,slave_id,device_name,device_type_id,address,port_baudRate,protocol,byte_swap
 1,1,Smart Logger,1,192.168.0.10,502,TCP,FALSE
 2,12,Inverter 1,2,192.168.0.10,502,TCP,FALSE
-3,13,Inverter 2,2,/dev/ttyUSB0,9600,RTU,FALSE
+3,13,Inverter 2,2,192.168.0.10,502,TCP,FALSE
 4,14,Inverter 3,2,192.168.0.10,502,TCP,FALSE
 5,6,Power Meter,3,192.168.0.10,502,TCP,FALSE
