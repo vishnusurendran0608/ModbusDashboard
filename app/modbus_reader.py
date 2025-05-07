@@ -2,7 +2,7 @@ import csv
 import json
 import threading
 import time
-from pymodbus.client import ModbusTcpClient
+from pymodbus.client import ModbusTcpClient, ModbusSerialClient
 from app.csv_parser import parse_register_map, parse_device_map
 from app.utils import apply_byte_order
 from datetime import datetime
@@ -24,19 +24,35 @@ device_data = defaultdict(list)
 polling_locks = defaultdict(threading.Lock)
 
 def poll_device(device):
-    ip = device['ip_address']
-    port = int(device.get('port', 502))
-    unit_id = int(device['slave_id'])
-    swap_bytes = device.get('byte_swap', 'none')
-    device_key = f"{ip}_{unit_id}"
+  protocol = device.get('protocol', 'TCP').strip().upper()
+  swap_bytes = device.get('byte_swap', 'none')
+  unit_id = int(device['slave_id'])
+  device_key = f"{device['device_id']}_{unit_id}"
+  if protocol == 'TCP':
+    address = device['address']
+    port = int(device.get('port_baudRate', 502))
+    client = ModbusTcpClient(address, port=port)
+  elif protocol == 'RTU':
+    address = device['address']
+    baudrate = int(device.get('port_baudRate', 9600))  # in RTU, "port" field is used for baudrate
+    client = ModbusSerialClient(
+    port=address,
+    baudrate=baudrate,
+    timeout=3,
+    parity='N',
+    stopbits=1,
+    bytesize=8
+    )
+  else:
+    logger.error(f"Unsupported protocol '{protocol}' for device ID: {device['device_id']}")
+    return
 
-    with polling_locks[ip]:
-        client = ModbusTcpClient(ip, port=port)
+  with polling_locks[address]:
         if not client.connect():
-            logger.warning(f"Unable to connect to IP: {ip}, ID: {unit_id}")
+            logger.warning(f"Unable to connect to Address: {address}, ID: {unit_id}")
             return
 
-        logger.info(f"Connected to device at IP: {ip}, ID: {unit_id}")
+        logger.info(f"Connected to device at Address: {address}, ID: {unit_id}")
         with data_lock:
             device_data[device_key] = []
 
@@ -75,7 +91,7 @@ def poll_device(device):
                     break
 
             end_address = start_address + total_regs - 1
-            logger.info(f"Reading from Device IP: {ip}, ID: {unit_id}, Address Block: {start_address} to {end_address}")
+            logger.info(f"Reading from Device Address: {address}, ID: {unit_id}, Address Block: {start_address} to {end_address}")
 
             # Perform correct read
             result = client.read_holding_registers(address=start_address_mod, count=total_regs, slave=unit_id)
@@ -108,16 +124,16 @@ def poll_device(device):
                             device_data[device_key].append(entry)
                             #append_to_cache(entry)
 
-                        logger.info(f"Read {variable} = {value} from IP: {ip}, ID: {unit_id}, Address: {addr}")
+                        logger.info(f"Read {variable} = {value} from Address: {address}, ID: {unit_id}, Address: {addr}")
                     except Exception as e:
                         logger.error(f"Error decoding register {variable} at address {addr}: {e}")
             else:
-                logger.warning(f"Failed to read registers at block starting {start_address} from IP: {ip}, ID: {unit_id}")
+                logger.warning(f"Failed to read registers at block starting {start_address} from Address: {address}, ID: {unit_id}")
 
             i = j
 
         client.close()
-        logger.info(f"Disconnected from IP: {ip}, ID: {unit_id}")
+        logger.info(f"Disconnected from Address: {address}, ID: {unit_id}")
 
 def poll_devices():
     while True:

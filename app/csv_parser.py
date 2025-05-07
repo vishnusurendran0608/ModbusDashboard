@@ -23,10 +23,13 @@ def parse_device_map(path):
         device_map = []
         for row in reader:
             device_map.append({
+                "device_id": int(row["device_id"]),
                 "slave_id": int(row["slave_id"]),
                 "device_name": row["device_name"].strip(),
                 "device_type_id": row["device_type_id"].strip(),
-                "ip_address": row["ip_address"].strip(),
+                "address": row["address"].strip(),  # IP or serial port
+                "port_baudRate": row["port_baudRate"].strip(),  # port for TCP or baud rate for RTU
+                "protocol": row["protocol"].strip().upper(),  # "TCP" or "RTU"
                 "byte_swap": row.get("byte_swap", "none").strip()
             })
         return device_map

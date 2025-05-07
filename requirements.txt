@@ -1,5 +1,6 @@
 flask
 pymodbus
+pyserial
 awscrt
 awsiot
 boto3
