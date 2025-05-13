@@ -19,3 +19,4 @@ shared-certificate.pem.crt
 shared-private.pem.key
 shared-public.pem.key
 auto-provision.py
+aws_config.json

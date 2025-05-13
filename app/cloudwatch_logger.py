@@ -9,7 +9,7 @@ from app.logger import logger
 
 # Set up module-level logger
 
-logger.setLevel(logging.ERROR)
+logger.setLevel(logging.WARNING)
 
 # Remove any default handlers
 for handler in logger.handlers[:]:
