@@ -5,9 +5,9 @@
     "port": 5000,
     "max_registers": 100,
     "mqtt": {
-      "topic":"renewablebot/modbus",
       "enabled": true,
-      "publish_interval": 10
+      "publish_interval": 10,
+      "error_log_publish_interval": 60
     }
 }
   

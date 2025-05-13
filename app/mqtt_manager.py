@@ -9,6 +9,7 @@ from awsiot import mqtt5_client_builder
 from pathlib import Path
 from concurrent.futures import Future
 from app.cache_manager import save_payload_to_cache, load_cached_payloads, clear_cache
+import os
 
 mqtt_client_instance = None
 logger = logging.getLogger("modbus")
@@ -168,3 +169,61 @@ def sync_cached_payloads():
             return  # You can also use 'continue' if you want to try the rest
 
     clear_cache()
+
+# For tracking last published error line
+ERROR_LOG_PATH = "logs/error.log"
+ERROR_STATE_PATH = "logs/last_error_line.txt"
+
+def publish_new_errors_to_mqtt(settings):
+    """
+    Publishes only new error log entries to MQTT.
+    """
+    if not mqtt_client_instance:
+        logger.warning("MQTT client not connected. Skipping error log publish.")
+        return
+
+    try:
+        if not os.path.exists(ERROR_LOG_PATH):
+            logger.warning(f"Error log file not found: {ERROR_LOG_PATH}")
+            return
+
+        # Read last published line number
+        last_line = 0
+        if os.path.exists(ERROR_STATE_PATH):
+            with open(ERROR_STATE_PATH, "r") as f:
+                last_line = int(f.read().strip())
+
+        # Read new error lines
+        with open(ERROR_LOG_PATH, "r") as f:
+            all_lines = f.readlines()
+
+        new_lines = all_lines[last_line:]
+        if not new_lines:
+            return  # No new errors
+
+        # Construct payload
+        payload = {
+            "tenant_id": config["tenant_id"],
+            "customer_id": config["customer_id"],
+            "site_id": config["site_id"],
+            "pi_id": pi_id,
+            "timestamp": int(time.time() * 1000),
+            "errors": [line.strip() for line in new_lines]
+        }
+
+        topic = f"solar/{payload['tenant_id']}/{payload['customer_id']}/{payload['site_id']}/{payload['pi_id']}/errors"
+
+        message = mqtt5.PublishPacket(
+            topic=topic,
+            payload=json.dumps(payload).encode("utf-8"),
+            qos=mqtt5.QoS.AT_LEAST_ONCE,
+        )
+        mqtt_client_instance.publish(message).result()
+        logger.info(f"Published new error logs to: {topic}")
+
+        # Update line state
+        with open(ERROR_STATE_PATH, "w") as f:
+            f.write(str(len(all_lines)))
+
+    except Exception as e:
+        logger.error(f"Failed to publish error logs to MQTT: {e}")

@@ -4,7 +4,7 @@ import json
 import time
 from app.modbus_reader import poll_devices, get_data
 from app.flask_server import create_app
-from app.mqtt_manager import initialize_mqtt, publish_to_mqtt
+from app.mqtt_manager import initialize_mqtt, publish_to_mqtt, publish_new_errors_to_mqtt
 from app.logger import logger  # <- use centralized logger from logger.py
 
 # Load settings
@@ -34,6 +34,16 @@ def mqtt_publish_thread():
 mqtt_thread = threading.Thread(target=mqtt_publish_thread, daemon=True)
 mqtt_thread.start()
 logger.info("Started MQTT publishing thread.")
+
+def mqtt_error_log_thread():
+    while True:
+        publish_new_errors_to_mqtt(settings)
+        interval = settings["mqtt"].get("error_log_publish_interval", 60)
+        time.sleep(interval)
+
+error_log_thread = threading.Thread(target=mqtt_error_log_thread, daemon=True)
+error_log_thread.start()
+logger.info("Started MQTT error log publishing thread.")   
 
 # Run Flask server
 if __name__ == "__main__":
