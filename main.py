@@ -5,7 +5,9 @@ import time
 from app.modbus_reader import poll_devices, get_data
 from app.flask_server import create_app
 from app.mqtt_manager import initialize_mqtt, publish_to_mqtt
-from app.logger import logger  # <- use centralized logger from logger.py
+# from app.logger import logger  # <- use centralized logger from logger.py
+from app.cloudwatch_logger import init_logger
+from app.logger import logger  
 
 # Load settings
 with open("settings.json") as f:
@@ -13,6 +15,7 @@ with open("settings.json") as f:
 
 print("Current working directory:", os.getcwd())
 
+init_logger()
 # Initialize MQTT connection
 initialize_mqtt(settings)
 

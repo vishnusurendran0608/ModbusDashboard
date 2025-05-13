@@ -4,3 +4,4 @@ pyserial
 awscrt
 awsiot
 boto3
+watchtower
