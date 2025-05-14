@@ -7,10 +7,6 @@ import os
 import re
 from app.logger import logger
 
-# Set up module-level logger
-
-logger.setLevel(logging.ERROR)
-
 # Global to hold the current device ID (optional export)
 current_pi_id = None
 
@@ -78,7 +74,7 @@ def init_logger(config_path="aws_config.json", device_config="device.json"):
             stream_name=stream_name,
             create_log_group=True
         )
-
+        cloudwatch_handler.setLevel(logging.INFO)  # or WARNING
         formatter = logging.Formatter(
             '[%(levelname)s] %(asctime)s "message": "%(message)s"'
         )
