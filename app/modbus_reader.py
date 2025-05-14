@@ -73,11 +73,6 @@ def poll_device(device):
                 if next_fc != current_fc:
                     break
 
-                prev_end = int(regs[j-1]['address']) + int(regs[j-1]['quantity'])
-                next_start = int(regs[j]['address'])
-                if next_start != prev_end:
-                    break
-
                 next_addr = int(regs[j]['address'])
                 next_qty = int(regs[j]['quantity'])
                 if next_addr + next_qty - start_address <= max_registers:
