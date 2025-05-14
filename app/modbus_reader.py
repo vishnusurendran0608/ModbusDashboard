@@ -81,13 +81,19 @@ def poll_device(device):
 
             j = i + 1
             while j < len(regs):
-                next_addr = int(regs[j]['address'])
-                next_qty = int(regs[j]['quantity'])
-                if next_addr + next_qty - start_address <= max_registers:
+                 prev_end = int(regs[j-1]['address']) + int(regs[j-1]['quantity'])
+                 next_start = int(regs[j]['address'])
+                 
+                 if next_start != prev_end:
+                    break  # gap detected
+
+                 next_addr = int(regs[j]['address'])
+                 next_qty = int(regs[j]['quantity'])
+                 if next_addr + next_qty - start_address <= max_registers:
                     block.append(regs[j])
                     total_regs = (next_addr + next_qty) - start_address
                     j += 1
-                else:
+                 else:
                     break
 
             end_address = start_address + total_regs - 1

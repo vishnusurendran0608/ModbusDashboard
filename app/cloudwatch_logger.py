@@ -11,10 +11,6 @@ from app.logger import logger
 
 logger.setLevel(logging.ERROR)
 
-# Remove any default handlers
-for handler in logger.handlers[:]:
-    logger.removeHandler(handler)
-
 # Global to hold the current device ID (optional export)
 current_pi_id = None
 
